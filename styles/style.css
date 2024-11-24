@@ -1,0 +1,18 @@
+@import url(base/normalize.css);
+
+@import url(blocks/header.css);
+@import url(blocks/main.css);
+@import url(blocks/main-block.css);
+@import url(blocks/advantages.css);
+@import url(blocks/container.css);
+@import url(blocks/section-advantages.css);
+@import url(blocks/section-featured.css);
+@import url(blocks/section-jobs.css);
+@import url(blocks/section-plugins.css);
+@import url(blocks/section-reviews.css);
+@import url(blocks/section-sounds.css);
+@import url(blocks/section-studio.css);
+@import url(blocks/footer.css);
+@import url(blocks/copyright.css);
+@import url(blocks/links.css);
+@import url(blocks/socials.css);

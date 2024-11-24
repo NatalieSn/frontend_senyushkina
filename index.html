@@ -5,31 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header class="page__header header">
+    <header class="header">
         <img src="img/header/logo.svg" alt="" class="header__logo">
 
-        <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="list__item">STUDIO</li>
-                <li class="list__item">COMMUNITY</li>
-                <li class="list__item">SOUNDS</li>
-                <li class="list__item">PLUGINS</li>
-                <li class="list__item">BLOG</li>
+        <nav class="header__nav">
+            <ul class="header-list">
+                <li class="header-list__item">STUDIO</li>
+                <li class="header-list__item">COMMUNITY</li>
+                <li class="header-list__item">SOUNDS</li>
+                <li class="header-list__item">PLUGINS</li>
+                <li class="header-list__item">BLOG</li>
             </ul>
         </nav>
 
-        <a href="" class="header__button button">LOG IN</a>
-        <a href="" class="header__button button">SIGN UP</a>
+        <a href="" class="header__button">LOG IN</a>
+        <a href="" class="header__button">SIGN UP</a>
 
     </header>
 
-    <main class="page__content content">
-        <section class="content__section main-block">
+    <main class="main">
+        <section class="main-block">
 
-            <div class="container">
+            <div class="main-block__container">
                 <img src="img/main-block/slogan.png" alt="" class="container__slogan">
                 <p class="container__text">Royalty-free sounds. Industry-leading software.<br>Endless inspiration. Start
                     creating
@@ -37,42 +38,40 @@
                 <button class="container__button">SIGN UP</button>
             </div>
 
-            <img src="img/main-block/side.png" alt="" class="main-block__image">
+            <img src="img/main-block/side.png" alt="" class="main-block__img">
 
         </section>
 
-        <section class="content__section featured">
+        <section class="section-featured">
 
-            <p class="section__caption">FEATURED IN</p>
-            <div class="featured__list">
-                <img src="img/featured1.svg" alt="">
-                <img src="img/featured2.svg" alt="">
-                <img src="img/featured3.svg" alt="">
-                <img src="img/featured4.svg" alt="">
-                <img src="img/featured5.svg" alt="">
+            <p class="section-featured__caption">FEATURED IN</p>
+            <div class="section-featured__list">
+                <img src="img/featured1.svg" alt="" class="section-featured__img">
+                <img src="img/featured2.svg" alt="" class="section-featured__img">
+                <img src="img/featured3.svg" alt="" class="section-featured__img">
+                <img src="img/featured4.svg" alt="" class="section-featured__img">
+                <img src="img/featured5.svg" alt="" class="section-featured__img">
             </div>
         </section>
 
-        <section class="content__section info-sounds">
+        <section class="section-sounds">
 
             <div class="container">
-                <p class="section__caption">SOUNDS</p>
+                <p class="container__caption">SOUNDS</p>
                 <h2 class="container__slogan">Find your sound</h2>
                 <p class="container__text">Preview and download millions of royalty-free samples from top producers,
                     artists, and sound designers. Available on desktop, web, and mobile.</p>
                 <button class="container__button">TRY SOUNDS</button>
-
-                <img src="img/sounds_img.png" alt="" class="info-sounds__image">
             </div>
-
+            <img src="img/sounds_img.png" alt="" class="section-sounds__img">
         </section>
 
-        <section class="content__section info-plugins">
+        <section class="section-plugins">
 
-            <img src="" alt="" class="info-plugins__image">
+            <img src="" alt="" class="section-plugins__img">
 
             <div class="container">
-                <p class="section__caption">PLUGINS</p>
+                <p class="container__caption">PLUGINS</p>
                 <h2 class="container__slogan">Build your digital studio</h2>
                 <p class="container__text">Try industry-leading music software for free? pay it off over time and own it
                     forever.</p>
@@ -81,74 +80,104 @@
 
         </section>
 
-        <section class="content__section info-studio">
+        <section class="section-studio">
 
             <div class="container">
-                <p class="section__caption">SOUNDS</p>
-                <h2 class="container__slogan">Find your sound</h2>
-                <p class="container__text">Preview and download millions of royalty-free samples from top producers,
-                    artists, and sound designers. Available on desktop, web, and mobile.</p>
-                <button class="container__button">TRY SOUNDS</button>
-
-                <img src="img/studio_img.png" alt="" class="info-studio__image">
+                <p class="container__caption">STUDIO</p>
+                <h2 class="container__slogan">Stay in sync</h2>
+                <p class="container__text">Tru industry-leading music software for free, pay it off over time and own it forever.</p>
+                <button class="container__button">TRY STUDIO</button>                
             </div>
+            
+            <img src="img/studio_img.png" alt="" class="info-studio__img">
+        </section>
+
+        <section class="section-reviews">
+
+            <div class="container">
+                <h2 class="container__slogan">What creators are saying about Splice</h2>
+                <p class="container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Augue tellus urna, mi velit diam. Turpis diam amet massa id.</p>
+                <button class="container__button">TRY IT NOW</button>
+            </div>
+
+            <img src="img/reviews_img.png" alt="" class="section-reviews__img">
+
+            <div class="section-reviews__review-1">
+                <p class="review__text">I can always find what Im looking for in Splice, whether its the exact sound I want or just a bit of inspiration.</p>
+                <img src="img/review1.png" alt="" class="review__img">
+                <p class="review__name">Andrew Huang</p>
+                <p class="review__artist">Artist</p>
+            </div>
+            <div class="section-reviews__review-2">
+                <p class="review__text">Finally a way to buy plugins that works. By paying a little at a time, producers can get legit access to the top VSTs.</p>
+                <img src="img/review2.png" alt="" class="review__img">
+                <p class="review__name">KSHMR</p>
+                <p class="review__artist">Artist</p>
+            </div>
+            <div class="section-reviews__review-3">
+                <p class="review__text">Its been fun to dive into Splicers creator community and explore tools that support my own creative process.</p>
+                <img src="img/review3.png" alt="" class="review__img">
+                <p class="review__name">Kesha Lee</p>
+                <p class="review__artist">Artist</p>
+            </div>
+            <div class="section-reviews__review-4">
+                <p class="review__text">I can always find what Im looking for in Splice, whether its the exact sound I want or just a bit of inspiration.</p>
+                <img src="img/review1.png" alt="" class="review__img">
+                <p class="review__name">Andrew Huang</p>
+                <p class="review__artist">Artist</p>
+            </div>
+
 
         </section>
 
-        <section class="content__section reviews">
-
-            <div class="container">
-                <p class="section__caption">SOUNDS</p>
-                <h2 class="container__slogan">Find your sound</h2>
-                <p class="container__text">Preview and download millions of royalty-free samples from top producers,
-                    artists, and sound designers. Available on desktop, web, and mobile.</p>
-                <button class="container__button">TRY SOUNDS</button>
-
-                <img src="img/reviews_img.png" alt="" class="reviews__image">
-            </div>
-
-            <div class="reviews__one one">
-                <p class="review__text"></p>
-                <img src="img/review1.png" alt="" class="review__image">
-                <p class="review__name"></p>
-                <p class="review__artist"></p>
-            </div>
-
-        </section>
-
-        <section class="content__section advantages">
-            <h2 class="advantages__slogan">As good as it sounds</h2>
-            <div class="advantages__all">
-                <div class="advantages__one">
-                    <img src="img/" alt="" class="advantages__image">
-                    <p class="advantage__name"></p>
-                    <p class="advantsge__text"></p>
+        <section class="section-advantages">
+            <h2 class="section-advantages__slogan">As good as it sounds</h2>
+            <div class="advantages">
+                <div class="advantages__advantage1">
+                    <img src="img/volume.svg" alt="" class="advantages__img">
+                    <p class="advantage__name">100 royalty free</p>
+                    <p class="advantage__text">Use sounds for anything. They are cleared for commercial use.</p>
+                </div>
+                <div class="advantages__advantage2">
+                    <img src="img/unlock.svg" alt="" class="advantages__img">
+                    <p class="advantage__name">No commitments</p>
+                    <p class="advantage__text">Cancel your subscription at any time, no questions asked.</p>
+                </div>
+                <div class="advantages__advantage3">
+                    <img src="img/download.svg" alt="" class="advantages__img">
+                    <p class="advantage__name">Yours forever</p>
+                    <p class="advantage__text">Keep everything download. Even if you cancel.</p>
+                </div>
+                <div class="advantages__advantage4">
+                    <img src="img/play.svg" alt="" class="advantages__img">
+                    <p class="advantage__name">Individual samples</p>
+                    <p class="advantage__text">Preview download individual samples, not just full packs.</p>
                 </div>
             </div>
         </section>
 
-        <section class="content__section jobs">
+        <section class="section-jobs">
             <h2 class="jobs__slogan">Come change the way people make music</h2>
             <button class="jobs__button">JOBS AT SPLICE</button>
         </section>
 
     </main>
 
-    <footer class="page__footer footer">
-        <div class="footer__copyright">
+    <footer class="footer">
+        <div class="copyright">
             <img src="img/header/logo.svg" alt="" class="copyright__logo">
             <p class="copyright__text">2021 Splice.com All Rights Reserved</p>
         </div>
-        <div class="footer__links">
+        <div class="links">
             <ul class="links__column">
-                <li class="column__link_h"><h2>STUDIO</h2></li>
+                <li class="column__h"><h2>STUDIO</h2></li>
                 <li class="column__link">Features</li>
                 <li class="column__link">About Splice Studio</li>
                 <li class="column__link">Managing Your Production Library</li>
                 <li class="column__link">Collaborating with Baewatch</li>
             </ul>
             <ul class="links__column">
-                <li class="column__link_h"><h2>COMMUNITY</h2></li>
+                <li class="column_h"><h2>COMMUNITY</h2></li>
                 <li class="column__link">Ableton Live Projects</li>
                 <li class="column__link">FL Studio Projects</li>
                 <li class="column__link">Logic Pro X Projects</li>
@@ -157,7 +186,7 @@
                 <li class="column__link">Tiestos Secrets</li>
             </ul>
             <ul class="links__column">
-                <li class="column__link_h"><h2>SOUNDS</h2></li>
+                <li class="column_h"><h2>SOUNDS</h2></li>
                 <li class="column__link">Features</li>
                 <li class="column__link">Catalog</li>
                 <li class="column__link">How Jauz Uses Sounds</li>
@@ -165,7 +194,7 @@
                 <li class="column__link">KSHMR Vol. 2</li>
             </ul>
             <ul class="links__column">
-                <li class="column__link_h"><h2>PLUGINS</h2></li>
+                <li class="column_h"><h2>PLUGINS</h2></li>
                 <li class="column__link">Top VSTs</li>
                 <li class="column__link">Serum</li>
                 <li class="column__link">Rent to Own</li>
@@ -173,13 +202,13 @@
                 <li class="column__link">Top Manufacturers</li>
             </ul>
             <ul class="links__column">
-                <li class="column__link_h"><h2>BEATMAKER</h2></li>
+                <li class="column_h"><h2>BEATMAKER</h2></li>
                 <li class="column__link">Create Your Own Beat</li>
                 <li class="column__link">Wakapella</li>
                 <li class="column__link">Just Blaze</li>
             </ul>
             <ul class="links__column">
-                <li class="column__link_h"><h2>BLOG</h2></li>
+                <li class="column_h"><h2>BLOG</h2></li>
                 <li class="column__link">Latest Posts</li>
                 <li class="column__link">Using Soundtoys Decapitator</li>
                 <li class="column__link">Mastering 101</li>
@@ -187,20 +216,20 @@
                 <li class="column__link">Belonging at Splice</li>
             </ul>
         </div>
-        <div class="footer__social">
-            <h2 class="social__slogan">FIND US ON SOCIAL</h2>
+        <div class="socials">
+            <h2 class="socials__slogan">FIND US ON SOCIAL</h2>
             
-            <img src="img/facebook.svg" alt="" class="social__item">
-            <img src="img/twitter.svg" alt="" class="social__item">
-            <img src="img/instagram.svg" alt="" class="social__item">
-            <img src="img/YouTube.svg" alt="" class="social__item">
+            <img src="img/facebook.svg" alt="" class="socials__item">
+            <img src="img/twitter.svg" alt="" class="socials__item">
+            <img src="img/instagram.svg" alt="" class="socials__item">
+            <img src="img/YouTube.svg" alt="" class="socials__item">
 
-            <ul class="social__links">
-                <li class="social__link">Terms Of Use</li>
-                <li class="social__link">Privacy Policy</li>
-                <li class="social__link">Jobs</li>
-                <li class="social__link">Contact</li>
-                <li class="social__link">Help</li>
+            <ul class="socials__links">
+                <li class="socials__link">Terms Of Use</li>
+                <li class="socials__link">Privacy Policy</li>
+                <li class="socials__link">Jobs</li>
+                <li class="socials__link">Contact</li>
+                <li class="socials__link">Help</li>
             </ul>
         </div>
     </footer>
