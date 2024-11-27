@@ -1,0 +1,17 @@
+.section-featured {
+    width: auto;;
+    text-align: center;
+    margin: 82px 124px 127px;
+}
+
+.section-featured__caption {
+    margin-bottom: 30px;
+}
+
+.section-featured__list {
+
+}
+
+.section-featured__img {
+    padding: 0 70px;
+}

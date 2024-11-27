@@ -1,0 +1,43 @@
+
+.image-container {
+    position: relative;
+    width: 787.74px;
+    height: 701.76px;
+    display: flex;
+    background-image: url("img/main-block/side.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.main-block {
+    margin-left: 81px;
+    display: flex;
+	background: #F4F6F9;
+	align-items: center;
+	justify-content: space-between;
+    width: auto;
+}
+
+.container__slogan {
+    width: 481.16px;
+    height: 122.64px;
+    margin: 0 20px 24px 0;
+}
+
+.container__text {
+    line-height: 171%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+}
+
+.container__button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    background-color: #0056ff;
+}
