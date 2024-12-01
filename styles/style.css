@@ -18,7 +18,8 @@
 @import url(blocks/socials.css);
 
 body {
-    background-color:#F4F6F9;
+    background-color:#FFF;
+    width: 100%;
 }
 
 .main_background_img {
@@ -44,12 +45,11 @@ body {
     width: 787.74px;
     height: 701.76px;
     display: flex;
-    	  background-image: url("../images/heder.png");
-	  background-repeat: no-repeat;
-	  background-size: cover;
-	  background-position: center;
-	  margin-top: -100px;
-
+    background-image: url("../images/heder.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: -100px;
 }
 
 .image-container img {

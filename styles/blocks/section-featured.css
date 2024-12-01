@@ -1,5 +1,5 @@
 .section-featured {
-    width: auto;;
+    width: auto;
     text-align: center;
     margin: 82px 124px 127px;
 }
@@ -9,9 +9,10 @@
 }
 
 .section-featured__list {
-
+    display: flex;
+    width: 1052px;
 }
 
 .section-featured__img {
-    padding: 0 70px;
+    padding: 0 35px;
 }

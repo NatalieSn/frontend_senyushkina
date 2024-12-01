@@ -1,23 +1,26 @@
 
 .image-container {
     position: relative;
-    width: 787.74px;
-    height: 701.76px;
+    max-width: 787.74px;
+    height: auto;
     display: flex;
     background-image: url("img/main-block/side.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    object-fit: contain;
     z-index: 0;
 }
 
 .main-block {
-    margin-left: 81px;
+    padding-left: 81px;
     display: flex;
 	background: #F4F6F9;
 	align-items: center;
 	justify-content: space-between;
     width: auto;
+    height: 520px;
+    border-radius:  0% 0% 160% 160%/0% 0% 60% 60%;
 }
 
 .container__slogan {
