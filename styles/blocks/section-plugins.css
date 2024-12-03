@@ -1,0 +1,12 @@
+.section-plugins {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px 139px 109px 139px;
+}
+
+.section-plugins__img {
+    margin-right: 230px;
+    width: 35%;
+    object-fit: contain;
+}

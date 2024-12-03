@@ -1,0 +1,10 @@
+.section-studio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7.8% 230px 9.6%;
+}
+.info-studio__img{
+    width: 47%;
+    margin-left: 8%;
+}

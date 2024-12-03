@@ -1,0 +1,15 @@
+.section-advantages{
+    background-image: url("img/main-block/Patterns.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    z-index: 2;
+    background-color: #000;
+    margin: 0;
+    max-width: 100vw;
+    width: 100%;
+    color: #FFF;
+    position: relative;
+    overflow: visible;
+}

@@ -1,7 +1,10 @@
 .section-featured {
+    display: flex;
     width: auto;
     text-align: center;
     margin: 82px 124px 127px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-featured__caption {

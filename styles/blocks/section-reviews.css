@@ -1,0 +1,85 @@
+.section-reviews{
+    background-color: #000;
+    position: relative;
+    padding: 230px 7% 0 3.6%;
+    overflow: visible;
+    max-width: 100vw;
+    width: 100%;
+    height: 150vh;
+    box-sizing: border-box;
+}
+
+.section-reviews__img {
+    width: 60%;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: -184px;
+    right: 0;
+    object-fit: contain;
+}
+
+.section-reviews .container__slogan {
+    color: #FFF;
+}
+
+.section-reviews__review-1, .section-reviews__review-2, .section-reviews__review-3, .section-reviews__review-4 {
+    width: 290px;
+    height: 216px;
+    background-color: #202020;
+    padding: 28px;
+    color: #FFF;
+    z-index: 2;
+}
+
+.review__text{
+    line-height: 108%;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.review__img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.review__author{
+    display: flex;
+    align-items: center;
+}
+
+.author__name {
+    font-size: 11pt;
+    margin: 0 0 4px 0;
+}
+
+.author__artist{
+    font-size: 8pt;
+    padding: 0;
+    margin: 0;
+}
+
+.section-reviews__review-1 {
+    position: absolute;
+    top: 146px;
+    right: 507px;
+}
+
+.section-reviews__review-2 {
+    position: absolute;
+    top: 146px;
+    right: 120px;
+}
+
+.section-reviews__review-3{
+    position: absolute;
+    top: 461px;
+    right: 440px;
+}
+
+.section-reviews__review-4{
+    position: absolute;
+    top: 461px;
+    right: 53px;
+}
