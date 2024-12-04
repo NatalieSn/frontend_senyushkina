@@ -5,7 +5,7 @@
     grid-gap: 70px 3%; 
     width: 80%;
     max-width: 100vw;
-    margin: 20% auto 130px auto
+    margin: 15% auto 130px auto
 }
 
 .copyright:nth-child(1) { grid-row: 1 / span 2; } /* Ячейка 1 */
@@ -50,6 +50,7 @@
 
 .socials__item{
     margin: 0 10px;
+    width: 17px;
 }
 
 .socials__links{

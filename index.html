@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://db.onlinewebfonts.com/c/241fe709c5ae3e259dd0309ac49fa076?family=Shne+Breit+Krftig" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -66,11 +66,18 @@
                     artists, and sound designers. Available on desktop, web, and mobile.</p>
                 <button class="container__button">TRY SOUNDS</button>
             </div>
-
-            <img src="img/sounds_img.png" alt="" class="section-sounds__img">
-            
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <img src="img/sounds_img.png" alt="" class="swiper-slide">
+                  <img src="img/sounds_img.png" alt="" class="swiper-slide">
+                  <img src="img/sounds_img.png" alt="" class="swiper-slide">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>           
         </section>
-
+         
         <section class="section-plugins">
 
             <img src="img/Logos.png" alt="" class="section-plugins__img">
@@ -268,6 +275,8 @@
             </ul>
         </div>
     </footer>
+    <script src="scripts/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -6,13 +6,13 @@
     color: #FFF;
     position: relative;
     overflow: visible;
-    padding: 142px 0;
+    padding: 100px 0;
     background-image: url("../../img/main-block/Patterns.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     top: 10%;
-    height: 100vh;
+    height: 80vh;
     border-radius:  0% 0% 110% 110%/0% 0% 15% 15%;
     z-index: -1;
 }

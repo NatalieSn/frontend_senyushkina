@@ -5,9 +5,7 @@
     height: auto;
     display: flex;
     background-image: url("img/main-block/side.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    top: 0;
     object-fit: contain;
     z-index: 0;
 }
