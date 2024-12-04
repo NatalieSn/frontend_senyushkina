@@ -1,0 +1,41 @@
+.section-jobs{
+    position: relative;
+    overflow: visible;
+}
+
+.jobs{
+    position: absolute;
+    width: 88%;
+    height: 232px;
+    border-radius: 20px;
+    text-align: center;
+    top: -200px;
+    left: 5.5%;
+    right: 5.5%;
+    z-index: 3;
+    color: #FFF;
+    background: linear-gradient(130deg, #A659FF 0%, #7178FF 37%, #2148FF 65%, #FF3517 100%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.jobs__slogan{
+    font-size: 36pt;
+    margin: 0 0 16px 0
+}
+
+.jobs__button {
+    padding: 10px 20px;
+    width: 184px;
+    height: 37px;
+    font-size: 10pt;
+    border-radius: 25px;
+    border: 1px solid #FFF;
+    text-decoration: none;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0%);
+    margin: 16px 0 0 0;
+}

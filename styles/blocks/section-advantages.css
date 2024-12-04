@@ -1,10 +1,4 @@
 .section-advantages{
-    background-image: url("img/main-block/Patterns.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: contain;
-    z-index: 2;
     background-color: #000;
     margin: 0;
     max-width: 100vw;
@@ -12,4 +6,46 @@
     color: #FFF;
     position: relative;
     overflow: visible;
+    padding: 142px 0;
+    background-image: url("../../img/main-block/Patterns.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 10%;
+    height: 100vh;
+    border-radius:  0% 0% 110% 110%/0% 0% 15% 15%;
+    z-index: -1;
+}
+
+.section-advantages__slogan {
+    text-align: center;
+    font-size: 38pt;
+    margin: 50px 0 0 0;
+    padding-bottom: 113px;
+}
+
+.advantages__advantage1, .advantages__advantage2, .advantages__advantage3, .advantages__advantage4 {
+    width: 20%;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5.5%;
+}
+
+.advantage__name {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0 0 19px 0;
+}
+
+.advantage__text {
+    font-size: 12pt;
+    color: #958A8A;
+    line-height: 171%;
+}
+
+.advantages__img {
+    padding-bottom: 15px;
 }
