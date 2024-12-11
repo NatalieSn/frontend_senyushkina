@@ -14,12 +14,27 @@
     right: 5.5%;
     z-index: 3;
     color: #FFF;
-    background: linear-gradient(130deg, #A659FF 0%, #7178FF 37%, #2148FF 65%, #FF3517 100%);
+    background: linear-gradient(130deg, #9445f0, #7178FF, #2148FF, #f71d4cde);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	transform: translate3d(0, 0, 0);
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 40px 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 70%;
+	}
 }
 
 .jobs__slogan{
@@ -38,4 +53,10 @@
     color: #FFF;
     background-color: rgba(0, 0, 0, 0%);
     margin: 16px 0 0 0;
+}
+
+.jobs__button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 10%);
+    transition: 0.2s;
 }

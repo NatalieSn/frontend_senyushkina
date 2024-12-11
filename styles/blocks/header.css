@@ -64,3 +64,9 @@ header {
     color: #fff;
     background-color: rgba(256, 256, 256, 0.26);
 }
+
+.header__button-sign:hover {
+    background-color: #0056ff;
+    transition: 0.2s;
+    cursor: pointer;
+}
