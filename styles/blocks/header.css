@@ -56,13 +56,15 @@ header {
     font-size: 10pt;
     border-radius: 25px;
     text-decoration: none;
-    color: white;
+    color: #fff;
+    border: none;
 }
 
 .header__button-sign {
     background: transparent;
     color: #fff;
     background-color: rgba(256, 256, 256, 0.26);
+    border: none;
 }
 
 .header__button-sign:hover {
