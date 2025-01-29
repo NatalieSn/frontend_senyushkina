@@ -29,14 +29,23 @@
             <button class="header__button-sign" id="openModal">SIGN UP</button>
         </div>
 
-        <!--<div id="popup-overlay">
-            <div id="popup">
-                <h3>Пример всплывающего окна</h3>
-                <p>Это пример всплывающего окна с использованием HTML, CSS и JavaScript.</p>
-                <button onclick="hidePopup()">Закрыть окно</button>
-        </div>
-        </div>-->
-
+        <!--Модальное окно с формой-->
+        <div id="myModal" class="modal">
+            <div class="modal__content">
+                <span class="modal__close">&times;</span>
+                <h2 class="modal__header">Форма</h2>
+                <form id="myForm">
+                    <label for="name" class="form__label">Имя:</label><br>
+                    <input type="text" id="name" name="name" class="form__input"><br><br>
+                    <label for="email" class="form__label">Email:</label><br>
+                    <input type="email" id="email" name="email" class="form__input"><br><br>
+                    <div class="form__buttons">
+                        <button type="button" id="okButton" class="form__button">ОК</button>
+                        <button type="button" id="cancelButton" class="form__button">Отмена</button>
+                    </div>
+                </form>
+            </div>
+          </div>
     </header>
 
     <main class="main">
@@ -59,11 +68,11 @@
             <p class="section-featured__caption">FEATURED IN</p>
             <div class="section-featured__marquee">
                 <div class="section-featured__list" id="marquee">
-                        <img src="img/featured1.svg" alt="" class="section-featured__img">
-                        <img src="img/featured2.svg" alt="" class="section-featured__img">
-                        <img src="img/featured3.svg" alt="" class="section-featured__img">
-                        <img src="img/featured4.svg" alt="" class="section-featured__img">
-                        <img src="img/featured5.svg" alt="" class="section-featured__img">  
+                    <img src="img/featured1.svg" alt="" class="section-featured__img">
+                    <img src="img/featured2.svg" alt="" class="section-featured__img">
+                    <img src="img/featured3.svg" alt="" class="section-featured__img">
+                    <img src="img/featured4.svg" alt="" class="section-featured__img">
+                    <img src="img/featured5.svg" alt="" class="section-featured__img">  
                 </div>
             </div>
         </section>

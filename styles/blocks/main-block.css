@@ -1,12 +1,12 @@
 
 .image-container {
     position: relative;
-    /*max-width: 787.74px;*/
-    width: 50%;
+    max-width: 787.74px;
+    width: 60%;
     height: auto;
     display: flex;
     background-image: url("img/main-block/side.png");
-    top: 0;
+    top: -20%;
     object-fit: contain;
     z-index: 0;
 }
