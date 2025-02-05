@@ -42,3 +42,13 @@ const modal = document.getElementById("myModal");
       modal.style.display = "none";
       document.body.style.overflow = "auto"; // Включаем скролл
   }
+
+
+  //Прелоадер
+  window.onload = function() {
+    const preloader = document.getElementById('preloader');
+    setTimeout(() => {
+        preloader.style.display = 'none'; // Скрыть прелоадер
+        document.body.style.display = 'block'; // Показать содержимое сайта
+    }, 1500);
+};

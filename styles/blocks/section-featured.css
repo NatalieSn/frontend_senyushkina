@@ -1,4 +1,4 @@
-/*.section-featured {
+.section-featured {
     display: flex;
     width: auto;
     text-align: center;
@@ -21,18 +21,18 @@
 
 .section-featured__img {
     padding: 0 35px;
-}*/
+}
 
-.section-featured {
+/*.section-featured {
     text-align: center;
-    height: 150px; /* Высота секции */
+    height: 150px; /* Высота секции
     margin: 150px 0 80px 0;
 }
 
 .section-featured__marquee {
     display: flex;
     width: 100%;
-    white-space: nowrap; /* Запрет переносов строк */
+    white-space: nowrap; /* Запрет переносов строк 
     overflow: hidden;
 }
 
@@ -42,9 +42,9 @@
 
 .section-featured__img {
     display: inline-block;
-    /*max-width: 100px; /* Ограничение ширины изображений */
+    /*max-width: 100px; /* Ограничение ширины изображений 
     height: auto;
-    margin: 0 35px; /* Отступ между изображениями */
+    margin: 0 35px; /* Отступ между изображениями 
 }
 
 .section-featured__caption {
@@ -52,4 +52,4 @@
     font-size: 14pt;
     color: #606060;
     font-weight: 500;
-}
+}*/

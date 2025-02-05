@@ -17,6 +17,7 @@
 @import url(blocks/links.css);
 @import url(blocks/socials.css);
 @import url(blocks/modal.css);
+@import url(blocks/preloader.css);
 
 body {
     background-color:#FFF;
