@@ -27,7 +27,7 @@
     color: #FFF;
 }
 
-.section-reviews__review-1, .section-reviews__review-2, .section-reviews__review-3, .section-reviews__review-4 {
+.cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
     width: 290px;
     height: 216px;
     background-color: #202020;
@@ -64,25 +64,25 @@
     margin: 0;
 }
 
-.section-reviews__review-1 {
+.cards__review-1 {
     position: absolute;
     top: 146px;
     right: 507px;
 }
 
-.section-reviews__review-2 {
+.cards__review-2 {
     position: absolute;
     top: 146px;
     right: 120px;
 }
 
-.section-reviews__review-3{
+.cards__review-3{
     position: absolute;
     top: 461px;
     right: 440px;
 }
 
-.section-reviews__review-4{
+.cards__review-4{
     position: absolute;
     top: 461px;
     right: 53px;
