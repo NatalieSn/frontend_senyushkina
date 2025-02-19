@@ -4,7 +4,7 @@
     width: 60%;
     height: auto;
     display: flex;
-    background-image: url("img/main-block/side.png");
+    background-image: url("../../img/main-block/side.png");
     top: -20%;
     object-fit: contain;
     z-index: 0;
