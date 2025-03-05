@@ -29,17 +29,18 @@
 
 .cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
     width: 290px;
-    height: 216px;
+    height: /*216px*/ auto;
     background-color: #202020;
-    padding: 28px;
+    padding: 25px;
     color: #FFF;
     z-index: 2;
 }
 
 .review__text{
     line-height: 108%;
-    font-size: 16pt;
+    font-size: 13pt;
     font-weight: bold;
+    margin: 0 0 17px 0;
 }
 
 .review__img{

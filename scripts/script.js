@@ -54,40 +54,40 @@ const modal = document.getElementById("myModal");
 };
 
 
-const cards = {
+/*const cards = {
     card1: {
-        numb: "1",
+        id: "1",
         text: "I can always find what I'm looking for in Splice, whether it's the exact sound I want or just a bit of inspiration.",
         img: "img/review1.png",
         author: "Andrew Huang",
         artist: "Artist",
     },
     card2: {
-        numb: "2",
+        id: "2",
         text: "Finally a way to buy plugins that works. By paying a little at a time, producers can get legit access to the top VSTs.",
         img: "img/review2.png",
         author: "KSHMR",
         artist: "Artist",
     },
     card3: {
-        numb: "3",
+        id: "3",
         text: "It's been fun to dive into Splicer's creator community and explore tools that support my own creative process.",
         img: "img/review3.png",
         author: "Kesha Lee",
         artist: "Artist",
     },
     card4: {
-        numb: "4",
+        id: "4",
         text: "I can always find what I'm looking for in Splice, whether it's the exact sound I want or just a bit of inspiration.",
         img: "img/review1.png",
         author: "Andrew Huang",
         artist: "Artist",
     },
-};
+};*/
 
 function showCard(card) {
     return `
-        <div class="cards__review-${card.numb}">
+        <div class="cards__review-${card.id}">
             <p class="review__text">${card.text}</p>
             <div class="review__author">
                 <img src="${card.img}" class="review__img">
@@ -100,7 +100,7 @@ function showCard(card) {
     `;
 }
 
-function showAllCards(allCards) {
+/*function showAllCards(allCards) {
     const reviewCards = document.getElementById("cards");
     if (!reviewCards) {
         console.error("Element with id 'cards' not found.");
@@ -123,4 +123,24 @@ function clearCards() {
     if (reviewCards) {
         reviewCards.innerHTML = "";
     }
-}
+}*/
+
+fetch('https://jsonplaceholder.typicode.com/comments?_limit=4')
+    .then(response => response.json())
+    .then(json => {
+        const cards = json.map((comment, index) => {
+            return {
+                id: comment.id,
+                text: comment.body,
+                img: "img/review" + (index + 1) + ".png",
+                author: comment.email,
+                artist: "Artist"
+            };
+        });
+
+        const cardContainer = document.getElementById('cards');
+
+        cards.forEach(card => {
+            cardContainer.innerHTML += showCard(card);
+        });
+    })
