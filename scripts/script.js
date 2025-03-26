@@ -85,7 +85,7 @@ const modal = document.getElementById("myModal");
     },
 };*/
 
-function showCard(card) {
+/*function showCard(card) {
     return `
         <div class="cards__review-${card.id}">
             <p class="review__text">${card.text}</p>
@@ -98,7 +98,7 @@ function showCard(card) {
             </div>
         </div>
     `;
-}
+}*/
 
 /*function showAllCards(allCards) {
     const reviewCards = document.getElementById("cards");
@@ -125,7 +125,7 @@ function clearCards() {
     }
 }*/
 
-fetch('https://jsonplaceholder.typicode.com/comments?_limit=4')
+/*fetch('https://jsonplaceholder.typicode.com/comments?_limit=4')
     .then(response => response.json())
     .then(json => {
         const cards = json.map((comment, index) => {
@@ -143,4 +143,4 @@ fetch('https://jsonplaceholder.typicode.com/comments?_limit=4')
         cards.forEach(card => {
             cardContainer.innerHTML += showCard(card);
         });
-    })
+    })*/
