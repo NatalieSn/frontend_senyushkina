@@ -16,40 +16,48 @@
 
 .section-featured__list {
     display: flex;
-    width: 1052px;
 }
 
 .section-featured__img {
-    padding: 0 35px;
+    padding: 0 2em;
 }
 
-/*.section-featured {
-    text-align: center;
-    height: 150px; /* Высота секции
-    margin: 150px 0 80px 0;
+@media only screen and (max-width: 1024px) {
+    .section-featured{
+        margin: 40px auto;
+    }
+    .section-featured__list {
+        width: 70%; /* Уменьшаем ширину списка */
+    }
+
+    .section-featured__img {
+        padding: 0 1em; /* Уменьшаем отступы между изображениями */
+        width: 80%;
+    }
+
+    .section-featured__caption {
+        font-size: 10pt; /* Уменьшаем размер шрифта */
+    }
 }
 
-.section-featured__marquee {
-    display: flex;
-    width: 100%;
-    white-space: nowrap; /* Запрет переносов строк 
-    overflow: hidden;
-}
+/* Адаптивные стили для мобильных устройств */
+@media only screen and (max-width: 920px) {
+    .section-featured {
+        margin: 100px 5%; /* Уменьшаем отступы */
+    }
 
-.section-featured__list {
-    display: flex;
-}
+    .section-featured__list {
+        flex-direction: column; /* Вертикальное расположение изображений */
+        align-items: center; /* Центрируем изображения */
+        width: 100%; /* Ширина 100% */
+    }
 
-.section-featured__img {
-    display: inline-block;
-    /*max-width: 100px; /* Ограничение ширины изображений 
-    height: auto;
-    margin: 0 35px; /* Отступ между изображениями 
-}
+    .section-featured__img {
+        padding: 10px 0; /* Уменьшаем отступы между изображениями */
+        width: 80%; /* Уменьшаем ширину изображений */
+    }
 
-.section-featured__caption {
-    margin-bottom: 30px;
-    font-size: 14pt;
-    color: #606060;
-    font-weight: 500;
-}*/
+    .section-featured__caption {
+        font-size: 12pt; /* Размер шрифта для мобильных */
+    }
+}

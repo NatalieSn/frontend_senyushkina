@@ -72,3 +72,60 @@ header {
     transition: 0.2s;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 960px) {
+    header {
+        padding: 20px 5%; /* Уменьшаем отступы */
+    }
+
+    .header-list__item {
+        margin: 5px 1em; /* Отступ между пунктами меню */
+        font-size: 9pt; /* Увеличиваем размер шрифта для лучшего восприятия */
+    }
+    .header__button-log, .header__button-sign {
+        background-color: #0056ff;
+        font-size: 9pt;
+    }
+  }
+
+/* Стили для мобильных устройств (ширина экрана до 768px) */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Вертикальное выравнивание элементов */
+        padding: 20px 5%; /* Уменьшаем отступы */
+    }
+
+    .left {
+        flex-direction: column; /* Вертикальное выравнивание логотипа и навигации */
+        align-items: center; /* Центрируем элементы */
+        margin-bottom: 15px; /* Отступ снизу */
+    }
+
+    .header__nav {
+        margin-top: 10px; /* Отступ сверху для навигации */
+    }
+
+    .header-list {
+        flex-direction: column; /* Вертикальное выравнивание пунктов меню */
+        margin: 0; /* Убираем отступы */
+    }
+
+    .header-list__item {
+        margin: 5px 0; /* Отступ между пунктами меню */
+        font-size: 12pt; /* Увеличиваем размер шрифта для лучшего восприятия */
+    }
+
+    .header__buttons {
+        flex-direction: column; /* Вертикальное выравнивание кнопок */
+        align-items: center; /* Центрируем кнопки */
+        margin-top: 5px; /* Отступ сверху для кнопок */
+    }
+
+    .header__button-log, .header__button-sign {
+        width: 100%; /* Ширина кнопок на 100% */
+        padding: 12px; /* Увеличиваем отступы для кнопок */
+        font-size: 12pt; /* Увеличиваем размер шрифта */
+        text-align: center;
+    }
+}
+
