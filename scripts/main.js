@@ -1,4 +1,4 @@
-// Функция для отображения карточки
+// Функция для генерации HTML карточки
 function showCard(card) {
     return `
         <div class="cards__review-${card.id}">
@@ -13,25 +13,29 @@ function showCard(card) {
         </div>
     `;
 }
-// Функция для получения и отображения карточек
-fetch('https://jsonplaceholder.typicode.com/comments?_limit=4')
-    .then(response => response.json())
-    .then((json) => {
-    const cards = json.map((comment, index) => {
-        return {
+// Функция для загрузки и отображения карточек
+function fetchAndDisplayCards() {
+    fetch('https://jsonplaceholder.typicode.com/comments?_limit=4')
+        .then((response) => {
+        if (!response.ok)
+            throw new Error(`HTTP error! status: ${response.status}`);
+        return response.json();
+    })
+        .then((comments) => {
+        const cards = comments.map((comment, index) => ({
             id: comment.id,
             text: comment.body,
             img: `img/review${index + 1}.png`,
             author: comment.email,
             artist: "Artist"
-        };
-    });
-    const cardContainer = document.getElementById('cards');
-    if (cardContainer) {
-        cards.forEach(card => {
-            cardContainer.innerHTML += showCard(card);
-        });
-    }
-})
-    .catch(error => console.error('Ошибка:', error));
+        }));
+        const cardContainer = document.getElementById('cards');
+        if (!cardContainer)
+            throw new Error('Card container not found!');
+        cardContainer.innerHTML = cards.map(showCard).join('');
+    })
+        .catch((error) => console.error('Error:', error));
+}
+// Запускаем загрузку карточек
+fetchAndDisplayCards();
 //# sourceMappingURL=main.js.map

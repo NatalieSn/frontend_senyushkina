@@ -6,5 +6,5 @@
     "sourceMap": true,
     "outFile": "scripts/main.js"
   },
-  "include": ["./ts/*"]
+  "include": ["ts/**/*"]
 }
