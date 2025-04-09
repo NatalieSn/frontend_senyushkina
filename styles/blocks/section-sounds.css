@@ -3,14 +3,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*margin-bottom: 138px;*/
-    position: relative;
+    height: auto;
 }
 
 .swiper{
     width: 53%;
     height: 65vh;
-    position: absolute;
     bottom: -80px;
     object-fit: cover;
 }
+
