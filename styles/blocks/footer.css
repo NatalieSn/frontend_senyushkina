@@ -51,6 +51,7 @@
 .socials__item{
     margin: 0 10px;
     width: 17px;
+    cursor: pointer;
 }
 
 .socials__links{

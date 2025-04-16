@@ -38,6 +38,7 @@ header {
     font-size: 10pt;
     font-weight: 500;
     list-style-type:none;
+    cursor: pointer;
 }
 
 .header-list__item:hover {
