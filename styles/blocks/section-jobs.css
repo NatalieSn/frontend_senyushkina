@@ -1,9 +1,9 @@
-.section-jobs{
+.section-jobs {
     position: relative;
     overflow: visible;
 }
 
-.jobs{
+.jobs {
     position: absolute;
     width: 88%;
     height: 232px;
@@ -15,9 +15,9 @@
     z-index: 3;
     color: #FFF;
     background: linear-gradient(130deg, #9445f0, #7178FF, #2148FF, #f83c65);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-	transform: translate3d(0, 0, 0);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    transform: translate3d(0, 0, 0);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -26,20 +26,14 @@
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 70%;
-	}
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 70%; }
 }
 
-.jobs__slogan{
+.jobs__slogan {
     font-size: 36pt;
-    margin: 0 0 16px 0
+    margin: 0 0 16px 0;
 }
 
 .jobs__button {
@@ -59,4 +53,29 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 10%);
     transition: 0.2s;
+}
+
+/* Планшеты (768px–1024px) */
+@media only screen and (max-width: 1024px) {
+    .jobs {
+        height: 200px;
+        top: -150px;
+        padding: 30px 0;
+    }
+    .jobs__slogan { font-size: 30pt; }
+    .jobs__button { width: 160px; font-size: 9pt; }
+}
+
+/* Мобильные (<768px) */
+@media only screen and (max-width: 768px) {
+    .jobs {
+        position: relative;
+        top: 0;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin: 20px auto;
+    }
+    .jobs__slogan { font-size: 24pt; }
+    .jobs__button { width: 140px; font-size: 8pt; padding: 8px 16px; }
 }

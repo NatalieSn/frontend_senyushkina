@@ -6,7 +6,7 @@
     background: linear-gradient(to bottom, rgba(244, 246, 249, 1) 57%, rgba(244, 246, 249, 0) 100%);
     width: 100%;
     max-width: 100vw;
-    border-radius:  150% 150% 0% 0%/15% 15% 0% 0%;
+    border-radius: 150% 150% 0% 0% / 15% 15% 0% 0%;
 }
 
 .section-plugins__img {
@@ -16,5 +16,35 @@
 }
 
 .section-plugins > .container {
-    width: 28%
+    width: 28%;
+}
+
+/* Планшеты (768px–1024px) */
+@media only screen and (max-width: 1024px) {
+    .section-plugins {
+        padding: 200px 0 80px 0;
+    }
+    .section-plugins__img {
+        width: 40%;
+        margin-right: 10%;
+    }
+    .section-plugins > .container {
+        width: 35%;
+    }
+}
+
+/* Мобильные (<768px) */
+@media only screen and (max-width: 768px) {
+    .section-plugins {
+        flex-direction: column;
+        padding: 100px 0 50px 0;
+        border-radius: 0;
+    }
+    .section-plugins__img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .section-plugins > .container {
+        width: 90%;
+    }
 }

@@ -4,7 +4,32 @@
     align-items: center;
     margin: 0 7.8% 230px 9.6%;
 }
-.info-studio__img{
+
+.info-studio__img {
     width: 47%;
     margin-left: 8%;
+}
+
+/* Планшеты (768px–1024px) */
+@media only screen and (max-width: 1024px) {
+    .section-studio {
+        margin: 0 5% 150px 5%;
+    }
+    .info-studio__img {
+        width: 50%;
+        margin-left: 5%;
+    }
+}
+
+/* Мобильные (<768px) */
+@media only screen and (max-width: 768px) {
+    .section-studio {
+        flex-direction: column;
+        margin: 0 5% 100px 5%;
+    }
+    .info-studio__img {
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }

@@ -10,11 +10,11 @@
 }
 
 .main-block__container {
-    flex: 1; /* Позволяет контейнеру занимать оставшееся пространство */
-    padding-right: 20px; /* Отступ справа для текста */
+    flex: 1;
+    padding-right: 20px;
 }
 
-.main-block__img{
+.main-block__img {
     width: 100%;
     height: auto;
 }
@@ -22,12 +22,12 @@
 .main-block {
     padding-left: 81px;
     display: flex;
-	background: #F4F6F9;
-	align-items: center;
-	justify-content: space-between;
+    background: #F4F6F9;
+    align-items: center;
+    justify-content: space-between;
     width: auto;
     height: 550px;
-    border-radius:  0% 0% 160% 160%/0% 0% 60% 60%;
+    border-radius: 0% 0% 160% 160% / 0% 0% 60% 60%;
 }
 
 .container__slogan-img {
@@ -37,64 +37,65 @@
 }
 
 .container__text {
-    margin: 20px 0; /* Отступы для текста */
+    margin: 20px 0;
 }
 
 .container__button {
-    padding: 10px 20px; /* Отступы для кнопки */
+    padding: 10px 20px;
 }
 
+/* Планшеты (768px–1024px) */
 @media only screen and (max-width: 1024px) {
-    .main-block__container {
+    .main-block {
+        padding: 20px 5%;
         height: auto;
         flex-direction: column;
-        margin: 0 auto;
+        align-items: center;
+        border-radius: 0% 0% 100% 100% / 0% 0% 40% 40%;
+    }
+    .main-block__container {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .image-container {
+        display: none; /* Скрываем изображение */
+    }
+    .container__slogan-img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto 20px auto;
+    }
+}
+
+/* Мобильные (<768px) */
+@media only screen and (max-width: 768px) {
+    .main-block {
+        padding: 15px 5%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0% 0% 80% 80% / 0% 0% 30% 30%;
+    }
+    .main-block__container {
         padding: 0;
         text-align: center;
     }
-    .main-block {
-        padding-left: 40px; /* Уменьшаем отступы */
-        height: auto; /* Автоматическая высота */
-        flex-direction: column; /* Вертикальное расположение */
-        align-items: center; /* Центрируем содержимое */
-    }
-    
     .image-container {
-        display: none;
+        display: none; /* Скрываем изображение */
     }
-
     .container__slogan-img {
-        width: 100%; /* Увеличиваем ширину изображения слогана */
-        height: auto; /* Автоматическая высота */
-        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        margin: 0 auto 15px auto;
     }
-}
-
-/* Адаптивные стили для мобильных устройств */
-@media only screen and (max-width: 768px) {
-    .main-block {
-        padding-left: 20px; /* Уменьшаем отступы */
-        height: auto; /* Автоматическая высота */
-        flex-direction: column; /* Вертикальное расположение */
-        align-items: center; /* Центрируем содержимое */
-    }
-
-    .image-container {
-        display: none;
-    }
-
-    .container__slogan-img {
-        width: 80%; /* Уменьшаем ширину изображения слогана */
-        height: auto; /* Автоматическая высота */
-    }
-
     .container__text {
-        text-align: center; /* Центрируем текст */
-        font-size: 10pt;;
+        font-size: 10pt;
+        margin: 10px 0;
     }
-
     .container__button {
-        width: 100%; /* Кнопка занимает всю ширину */
-        margin-top: 10px; /* Отступ сверху */
+        width: 100%;
+        padding: 12px;
+        font-size: 10pt;
     }
 }

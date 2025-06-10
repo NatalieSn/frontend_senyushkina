@@ -22,42 +22,38 @@
     padding: 0 2em;
 }
 
+/* Планшеты (768px–1024px) */
 @media only screen and (max-width: 1024px) {
-    .section-featured{
+    .section-featured {
         margin: 40px auto;
     }
     .section-featured__list {
-        width: 70%; /* Уменьшаем ширину списка */
+        width: 70%;
     }
-
     .section-featured__img {
-        padding: 0 1em; /* Уменьшаем отступы между изображениями */
+        padding: 0 1em;
         width: 80%;
     }
-
     .section-featured__caption {
-        font-size: 10pt; /* Уменьшаем размер шрифта */
+        font-size: 10pt;
     }
 }
 
-/* Адаптивные стили для мобильных устройств */
-@media only screen and (max-width: 920px) {
+/* Мобильные (<768px) */
+@media only screen and (max-width: 768px) {
     .section-featured {
-        margin: 100px 5%; /* Уменьшаем отступы */
+        margin: 20px 5%;
     }
-
     .section-featured__list {
-        flex-direction: column; /* Вертикальное расположение изображений */
-        align-items: center; /* Центрируем изображения */
-        width: 100%; /* Ширина 100% */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
-
     .section-featured__img {
-        padding: 10px 0; /* Уменьшаем отступы между изображениями */
-        width: 80%; /* Уменьшаем ширину изображений */
+        padding: 10px 0;
+        width: 80%;
     }
-
     .section-featured__caption {
-        font-size: 12pt; /* Размер шрифта для мобильных */
+        font-size: 10pt;
     }
 }

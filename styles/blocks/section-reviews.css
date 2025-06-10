@@ -1,4 +1,4 @@
-.section-reviews{
+.section-reviews {
     background-color: #000;
     position: relative;
     padding: 230px 7% 0 3.6%;
@@ -29,27 +29,27 @@
 
 .cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
     width: 290px;
-    height: /*216px*/ auto;
+    height: auto;
     background-color: #202020;
     padding: 25px;
     color: #FFF;
     z-index: 2;
 }
 
-.review__text{
+.review__text {
     line-height: 108%;
     font-size: 13pt;
     font-weight: bold;
     margin: 0 0 17px 0;
 }
 
-.review__img{
+.review__img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
 
-.review__author{
+.review__author {
     display: flex;
     align-items: center;
 }
@@ -59,7 +59,7 @@
     margin: 0 0 4px 0;
 }
 
-.author__artist{
+.author__artist {
     font-size: 8pt;
     padding: 0;
     margin: 0;
@@ -77,14 +77,59 @@
     right: 120px;
 }
 
-.cards__review-3{
+.cards__review-3 {
     position: absolute;
     top: 461px;
     right: 440px;
 }
 
-.cards__review-4{
+.cards__review-4 {
     position: absolute;
     top: 461px;
     right: 53px;
+}
+
+/* Планшеты (768px–1024px) */
+@media only screen and (max-width: 1024px) {
+    .section-reviews {
+        padding: 150px 5% 0 3%;
+        height: 100vh;
+    }
+    .section-reviews__img {
+        width: 60%;
+        top: -150px;
+    }
+    .cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
+        width: 250px;
+        padding: 20px;
+    }
+    .cards__review-1 { right: 400px; }
+    .cards__review-2 { right: 50px; }
+    .cards__review-3 { top: 400px; right: 350px; }
+    .cards__review-4 { top: 400px; right: 0; }
+}
+
+/* Мобильные (<768px) */
+@media only screen and (max-width: 768px) {
+    .section-reviews {
+        padding: 100px 5% 5% 5%;
+        height: auto;
+        min-height: 80vh;
+    }
+    .section-reviews__img {
+        position: relative;
+        width: 100%;
+        top: 0;
+        margin-bottom: 20px;
+    }
+    .cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        top: auto;
+        right: auto;
+    }
+    .review__text { font-size: 12pt; }
+    .author__name { font-size: 10pt; }
+    .author__artist { font-size: 7pt; }
 }
