@@ -68,13 +68,16 @@
 
 /* Мобильные (<768px) */
 @media only screen and (max-width: 768px) {
+    .section-jobs{
+        margin: 20px auto;
+    }
     .jobs {
         position: relative;
         top: 0;
         width: 90%;
         height: auto;
-        padding: 20px;
-        margin: 20px auto;
+        /*padding: 20px;
+        margin: 20px auto;*/
     }
     .jobs__slogan { font-size: 24pt; }
     .jobs__button { width: 140px; font-size: 8pt; padding: 8px 16px; }

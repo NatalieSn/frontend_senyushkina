@@ -109,6 +109,7 @@ header {
     .header-list {
         flex-direction: column; /* Вертикальное выравнивание пунктов меню */
         margin: 0; /* Убираем отступы */
+        text-align: center;
     }
 
     .header-list__item {
@@ -125,7 +126,7 @@ header {
     .header__button-log, .header__button-sign {
         width: 100%; /* Ширина кнопок на 100% */
         padding: 12px; /* Увеличиваем отступы для кнопок */
-        font-size: 12pt; /* Увеличиваем размер шрифта */
+        font-size: 10pt; /* Увеличиваем размер шрифта */
         text-align: center;
     }
 }
