@@ -1,5 +1,5 @@
 .section-reviews {
-    background-color: #000;
+    background: linear-gradient(to bottom, rgb(1, 22, 43) 57%, rgb(106, 144, 180) 100%);
     position: relative;
     padding: 230px 7% 0 3.6%;
     overflow: visible;
@@ -30,7 +30,7 @@
 .cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
     width: 290px;
     height: auto;
-    background-color: #202020;
+    background-color: rgb(106, 144, 180);
     padding: 25px;
     color: #FFF;
     z-index: 2;

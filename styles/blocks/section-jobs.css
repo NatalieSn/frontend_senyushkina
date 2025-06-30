@@ -14,7 +14,7 @@
     right: 5.5%;
     z-index: 3;
     color: #FFF;
-    background: linear-gradient(130deg, #9445f0, #7178FF, #2148FF, #f83c65);
+    background: linear-gradient(130deg, rgba(133, 159, 192, 1), rgba(51, 144, 205, 1), rgba(0, 111, 185, 1), rgba(0, 71, 171, 1));
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     transform: translate3d(0, 0, 0);

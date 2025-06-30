@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="left">
-            <img src="img/header/logo.svg" alt="" class="header__logo">
+            <img src="img/header/logo.png" alt="" class="header__logo">
 
             <nav class="header__nav">
                 <ul class="header-list">
@@ -33,24 +33,30 @@
         <!--Модальное окно с формой-->
         <div id="myModal" class="modal">
             <div class="modal__content">
-                <span class="modal__close">&times;</span>
-                <h2 class="modal__header">Форма</h2>
+                <span class="modal__close">×</span>
+                <h2 class="modal__header">Book Your Adventure</h2>
                 <form id="myForm">
-                    <label for="name" class="form__label">Имя:</label><br>
+                    <label for="name" class="form__label">Name:</label><br>
                     <input type="text" id="name" name="name" class="form__input"><br><br>
                     <label for="email" class="form__label">Email:</label><br>
                     <input type="email" id="email" name="email" class="form__input"><br><br>
+                    <label for="tour" class="form__label">Preferred Tour:</label><br>
+                    <select id="tour" name="tour" class="form__input">
+                        <option value="whale-swim">Whale Swimming Tour</option>
+                        <option value="reef-dive">Coral Reef Dive</option>
+                        <option value="deep-sea">Deep Sea Exploration</option>
+                    </select><br><br>
                     <div class="form__buttons">
-                        <button type="button" id="okButton" class="form__button">ОК</button>
-                        <button type="button" id="cancelButton" class="form__button">Отмена</button>
+                        <button type="submit" id="okButton" class="form__button">Submit</button>
+                        <button type="button" id="cancelButton" class="form__button">Cancel</button>
                     </div>
                 </form>
             </div>
-          </div>
+        </div>
     </header>
 
     <main class="main" id="content">
-        
+
         <div id="preloader">
             <div class="loader"></div>
         </div>
@@ -59,9 +65,8 @@
 
             <div class="main-block__container">
                 <img src="img/main-block/slogan.png" alt="" class="container__slogan-img">
-                <p class="container__text">Royalty-free sounds. Industry-leading software.<br>Endless inspiration. Start
-                    creating
-                    with Splice.</p>
+                <p class="container__text">Dive into the abyss. Discover whale songs,<br>ocean waves, and deep-sea
+                    serenity.</p>
                 <button class="container__button">SIGN UP</button>
             </div>
             <div class="image-container">
@@ -71,14 +76,14 @@
 
         <section class="section-featured">
 
-            <p class="section-featured__caption">FEATURED IN</p>
+            <p class="section-featured__caption">TRUSTED BY</p>
             <div class="section-featured__marquee">
                 <div class="section-featured__list" id="marquee">
                     <img src="img/featured1.svg" alt="" class="section-featured__img">
                     <img src="img/featured2.svg" alt="" class="section-featured__img">
                     <img src="img/featured3.svg" alt="" class="section-featured__img">
                     <img src="img/featured4.svg" alt="" class="section-featured__img">
-                    <img src="img/featured5.svg" alt="" class="section-featured__img">  
+                    <img src="img/featured5.svg" alt="" class="section-featured__img">
                 </div>
             </div>
         </section>
@@ -86,33 +91,34 @@
         <section class="section-sounds">
 
             <div class="container">
-                <p class="container__caption">SOUNDS</p>
-                <h2 class="container__slogan">Find your <span class="slogan_colored">sound</span></h2>
-                <p class="container__text">Preview and download millions of royalty-free samples from top producers,
-                    artists, and sound designers. Available on desktop, web, and mobile.</p>
-                <button class="container__button">TRY SOUNDS</button>
+                <p class="container__caption">TOURS</p>
+                <h2 class="container__slogan">Find your <span class="slogan_colored">adventure</span></h2>
+                <p class="container__text">Explore our guided tours to swim with whales and discover vibrant marine
+                    ecosystems. Suitable for all skill levels, available year-round.</p>
+                <button class="container__button">EXPLORE TOURS</button>
             </div>
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <img src="img/sounds_img.png" alt="" class="swiper-slide">
-                  <img src="img/screen.jpg" alt="" class="swiper-slide">
+                    <!-- Slides -->
+                    <img src="img/Kit-65.jpg" alt="" class="swiper-slide">
+                    <img src="img/scale_1200.jpg" alt="" class="swiper-slide">
+                    <img src="img/1.jpg" alt="" class="swiper-slide">
                 </div>
                 <div class="swiper-pagination"></div>
-            </div>           
+            </div>
         </section>
-         
+
         <section class="section-plugins">
 
-            <img src="img/Logos.png" alt="" class="section-plugins__img">
+            <img src="img/gear.png" alt="" class="section-plugins__img">
 
             <div class="container">
-                <p class="container__caption">PLUGINS</p>
-                <h2 class="container__slogan">Build your <span class="slogan_colored">digital studio</span></h2>
-                <p class="container__text">Try industry-leading music software for free? pay it off over time and own it
-                    forever.</p>
-                <button class="container__button">TRY GEAR</button>
+                <p class="container__caption">GEAR</p>
+                <h2 class="container__slogan">Equip your <span class="slogan_colored">adventure</span></h2>
+                <p class="container__text">Access top-quality diving gear for your ocean journey, available for rent or
+                    purchase with expert guidance.</p>
+                <button class="container__button">EXPLORE GEAR</button>
             </div>
 
         </section>
@@ -120,25 +126,28 @@
         <section class="section-studio">
 
             <div class="container">
-                <p class="container__caption">STUDIO</p>
-                <h2 class="container__slogan">Stay in <span class="slogan_colored">sync</span></h2>
-                <p class="container__text">Tru industry-leading music software for free, pay it off over time and own it forever.</p>
-                <button class="container__button">TRY STUDIO</button>                
+                <p class="container__caption">EXPERIENCES</p>
+                <h2 class="container__slogan">Dive in <span class="slogan_colored">harmony</span></h2>
+                <p class="container__text">Join our guided tours to connect with whales and marine life in their natural
+                    habitat, creating memories that last a lifetime.</p>
+                <button class="container__button">DISCOVER EXPERIENCES</button>
             </div>
-            
-            <img src="img/studio_img.png" alt="" class="info-studio__img">
+
+            <img src="img/1117876.png" alt="" class="info-studio__img">
         </section>
 
         <section class="section-reviews">
 
             <div class="container">
-                <h2 class="container__slogan">What <span class="slogan_colored">creators</span> are saying about Splice</h2>
-                <p class="container__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Augue tellus urna, mi velit diam. Turpis diam amet massa id.</p>
-                <button class="container__button">TRY IT NOW</button>
+                <h2 class="container__slogan">What <span class="slogan_colored">adventurers</span> are saying about us
+                </h2>
+                <p class="container__text">Hear from divers who’ve experienced the magic of swimming with whales in the
+                    open ocean.</p>
+                <button class="container__button">BOOK NOW</button>
             </div>
 
             <img src="img/reviews_img.png" alt="" class="section-reviews__img">
-            
+
             <div class="section-reviews__cards" id="cards">
                 <!--<div class="cards__review-1">
                     <p class="review__text">I can always find what Im looking for in Splice, whether its the exact sound I want or just a bit of inspiration.</p>
@@ -184,35 +193,35 @@
         </section>
 
         <section class="section-advantages">
-            <h2 class="section-advantages__slogan">As good as it sounds</h2>
+            <h2 class="section-advantages__slogan">As thrilling as it sounds</h2>
             <div class="advantages">
                 <div class="advantages__advantage1">
                     <img src="img/volume.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">100 royalty free</p>
-                    <p class="advantage__text">Use sounds for anything. They are cleared for commercial use.</p>
+                    <p class="advantage__name">Eco-Friendly Tours</p>
+                    <p class="advantage__text">Our tours prioritize marine conservation and sustainable practices.</p>
                 </div>
                 <div class="advantages__advantage2">
                     <img src="img/unlock.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">No commitments</p>
-                    <p class="advantage__text">Cancel your subscription at any time, no questions asked.</p>
+                    <p class="advantage__name">Expert Guides</p>
+                    <p class="advantage__text">Dive with certified professionals ensuring your safety and comfort.</p>
                 </div>
                 <div class="advantages__advantage3">
                     <img src="img/download.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">Yours forever</p>
-                    <p class="advantage__text">Keep everything download. <br>Even if you cancel.</p>
+                    <p class="advantage__name">Flexible Booking</p>
+                    <p class="advantage__text">Change or cancel your tour with ease,<br>no questions asked.</p>
                 </div>
                 <div class="advantages__advantage4">
                     <img src="img/play.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">Individual samples</p>
-                    <p class="advantage__text">Preview download individual samples, not just full packs.</p>
+                    <p class="advantage__name">Small Groups</p>
+                    <p class="advantage__text">Enjoy intimate tours for a personalized diving experience.</p>
                 </div>
             </div>
         </section>
 
         <section class="section-jobs">
             <div class="jobs">
-                <h2 class="jobs__slogan">Come change the way<br>people make music</h2>
-                <button class="jobs__button">JOBS AT SPLICE</button>
+                <h2 class="jobs__slogan">Join us to protect<br>and explore the oceans</h2>
+                <button class="jobs__button">JOBS WITH US</button>
             </div>
         </section>
 
@@ -220,65 +229,55 @@
 
     <footer class="footer">
         <div class="copyright">
-            <img src="img/header/logo.svg" alt="" class="copyright__logo">
-            <p class="copyright__text">2021 Splice.com All Rights Reserved</p>
+            <img src="img/header/logo.png" alt="" class="copyright__logo">
+            <p class="copyright__text">2025 BlueEcho.com All Rights Reserved</p>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">STUDIO</h2>
-                <li class="column__link">Features</li>
-                <li class="column__link">About Splice Studio</li>
-                <li class="column__link">Managing Your Production Library</li>
-                <li class="column__link">Collaborating with Baewatch</li>
+                <h2 class="column__h">TOURS</h2>
+                <li class="column__link">Whale Swimming</li>
+                <li class="column__link">Reef Diving</li>
+                <li class="column__link">Group Packages</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">PLUGINS</h2>
-                <li class="column__link">Top VSTs</li>
-                <li class="column__link">Serum</li>
-                <li class="column__link">Rent to Own</li>
-                <li class="column__link">Free Plugins</li>
-                <li class="column__link">Top Manufacturers</li>
+                <h2 class="column__h">CONSERVATION</h2>
+                <li class="column__link">Our Mission</li>
+                <li class="column__link">Partner Organizations</li>
+                <li class="column__link">Eco Practices</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">COMMUNITY</h2>
-                <li class="column__link">Ableton Live Projects</li>
-                <li class="column__link">FL Studio Projects</li>
-                <li class="column__link">Logic Pro X Projects</li>
-                <li class="column__link">Garageband Projects</li>
-                <li class="column__link">Remix Contests</li>
-                <li class="column__link">Tiestos Secrets</li>
+                <h2 class="column__h">STORIES</h2>
+                <li class="column__link">Diver Experiences</li>
+                <li class="column__link">Marine Life Facts</li>
+                <li class="column__link">Travel Tips</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">BEATMAKER</h2>
-                <li class="column__link">Create Your Own Beat</li>
-                <li class="column__link">Wakapella</li>
-                <li class="column__link">Just Blaze</li>
+                <h2 class="column__h">TOURS</h2>
+                <li class="column__link">Whale Swimming</li>
+                <li class="column__link">Reef Diving</li>
+                <li class="column__link">Group Packages</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">SOUNDS</h2>
-                <li class="column__link">Features</li>
-                <li class="column__link">Catalog</li>
-                <li class="column__link">How Jauz Uses Sounds</li>
-                <li class="column__link">deadmau5s Chimaera</li>
-                <li class="column__link">KSHMR Vol. 2</li>
+                <h2 class="column__h">CONSERVATION</h2>
+                <li class="column__link">Our Mission</li>
+                <li class="column__link">Partner Organizations</li>
+                <li class="column__link">Eco Practices</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">BLOG</h2>
-                <li class="column__link">Latest Posts</li>
-                <li class="column__link">Using Soundtoys Decapitator</li>
-                <li class="column__link">Mastering 101</li>
-                <li class="column__link">Producing Future Beats</li>
-                <li class="column__link">Belonging at Splice</li>
+                <h2 class="column__h">STORIES</h2>
+                <li class="column__link">Diver Experiences</li>
+                <li class="column__link">Marine Life Facts</li>
+                <li class="column__link">Travel Tips</li>
             </ul>
         </div>
         <div class="socials">

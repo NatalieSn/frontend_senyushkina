@@ -20,7 +20,7 @@
 }
 
 .modal__header {
-    color: #0056ff;
+    color: #26658c;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid #0056ff;
+    border: 2px solid #26658c;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -44,7 +44,7 @@
 }
 
 .form__button {
-    background-color: #0056ff;
+    background-color: #26658c;
     color: white;
     padding: 10px;
     border: none;

@@ -10,7 +10,7 @@
 .section-featured__caption {
     margin-bottom: 30px;
     font-size: 12pt;
-    color: #606060;
+    color: rgba(28, 139, 192, 0.7);
     font-weight: 500;
 }
 

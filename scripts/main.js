@@ -25,9 +25,9 @@ function fetchAndDisplayCards() {
         const cards = comments.map((comment, index) => ({
             id: comment.id,
             text: comment.body,
-            img: `img/review${index + 1}.png`,
+            img: `img/avat${index + 1}.jpg`,
             author: comment.email,
-            artist: "Artist"
+            artist: "Adventurer"
         }));
         const cardContainer = document.getElementById('cards');
         if (!cardContainer)

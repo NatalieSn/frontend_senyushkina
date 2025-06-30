@@ -22,7 +22,7 @@
 .main-block {
     padding-left: 81px;
     display: flex;
-    background: #F4F6F9;
+    background: rgba(198, 219, 234, 0.5);
     align-items: center;
     justify-content: space-between;
     width: auto;
