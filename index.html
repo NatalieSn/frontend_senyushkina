@@ -17,12 +17,12 @@
 
             <nav class="header__nav">
                 <ul class="header-list">
-                    <li class="header-list__item">ПАРТНЕРЫ</li>
-                    <li class="header-list__item">ТУРЫ</li>
-                    <li class="header-list__item">СНАРЯЖЕНИЕ</li>
-                    <li class="header-list__item">ОПЫТ</li>
-                    <li class="header-list__item">ОТЗЫВЫ</li>
-                    <li class="header-list__item">РАБОТА С НАМИ</li>
+                    <li class="header-list__item"><a href="#partners" class="header-list__item-link">ПАРТНЕРЫ</a></li>
+                    <li class="header-list__item"><a href="#tours" class="header-list__item-link">ТУРЫ</a></li>
+                    <li class="header-list__item"><a href="#gear" class="header-list__item-link">СНАРЯЖЕНИЕ</a></li>
+                    <li class="header-list__item"><a href="#experiencies" class="header-list__item-link">ОПЫТ</a></li>
+                    <li class="header-list__item"><a href="#reviews" class="header-list__item-link">ОТЗЫВЫ</a></li>
+                    <li class="header-list__item"><a href="#jobs" class="header-list__item-link">РАБОТА С НАМИ</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,22 +36,22 @@
             <div class="modal__content">
                 <span class="modal__close">×</span>
                 <h2 class="modal__header">Забронируйте свое <span class="slogan_colored">приключение</span></h2>
-                    <form id="myForm" class="modal__form">
-                        <label for="name" class="form__label">Имя:</label><br>
-                        <input type="text" id="name" name="name" class="form__input"><br><br>
-                        <label for="email" class="form__label">Эл. почта:</label><br>
-                        <input type="email" id="email" name="email" class="form__input"><br><br>
-                        <label for="tour" class="form__label">Предпочитаемый тур:</label><br>
-                        <select id="tour" name="tour" class="form__input">
-                            <option value="whale-swim">Плавание с китами</option>
-                            <option value="reef-dive">Погружение в коралловый риф</option>
-                            <option value="deep-sea">Исследование глубин</option>
-                        </select><br><br>
-                        <div class="form__buttons">
-                            <button type="submit" id="okButton" class="form__button">Отправить</button>
-                            <button type="button" id="cancelButton" class="form__button">Отмена</button>
-                        </div>
-                    </form>
+                <form id="myForm" class="modal__form">
+                    <label for="name" class="form__label">Имя:</label><br>
+                    <input type="text" id="name" name="name" class="form__input"><br><br>
+                    <label for="email" class="form__label">Эл. почта:</label><br>
+                    <input type="email" id="email" name="email" class="form__input"><br><br>
+                    <label for="tour" class="form__label">Предпочитаемый тур:</label><br>
+                    <select id="tour" name="tour" class="form__input">
+                        <option value="whale-swim">Плавание с китами</option>
+                        <option value="reef-dive">Погружение в коралловый риф</option>
+                        <option value="deep-sea">Исследование глубин</option>
+                    </select><br><br>
+                    <div class="form__buttons">
+                        <button type="submit" id="okButton" class="form__button">Отправить</button>
+                        <button type="button" id="cancelButton" class="form__button">Отмена</button>
+                    </div>
+                </form>
             </div>
         </div>
     </header>
@@ -75,8 +75,7 @@
             </div>
         </section>
 
-        <section class="section-featured">
-
+        <section class="section-featured" id="partners">
             <p class="section-featured__caption">НАШИ ПАРТНЕРЫ</p>
             <div class="section-featured__marquee">
                 <div class="section-featured__list" id="marquee">
@@ -89,16 +88,16 @@
             </div>
         </section>
 
-        <section class="section-sounds">
-
+        <section class="section-sounds" id="tours">
             <div class="container">
                 <p class="container__caption">ТУРЫ</p>
-                <h2 class="container__slogan">Отправьтесь в <span class="slogan_colored">эпическое</span> приключение</h2>
+                <h2 class="container__slogan">Отправьтесь в <span class="slogan_colored">эпическое</span> приключение
+                </h2>
                 <p class="container__text">Окунитесь в захватывающий мир океана! Плавайте с величественными китами,
                     исследуйте яркие морские экосистемы и создайте воспоминания, которые останутся с вами навсегда. Наши
                     туры подходят для всех — от новичков до опытных искателей приключений, и доступны в любое время
                     года.</p>
-                <button class="container__button">УЗНАТЬ БОЛЬШЕ</button>
+                <button class="container__button" id="learn-more-tours">УЗНАТЬ БОЛЬШЕ</button>
             </div>
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -110,48 +109,101 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+            <div class="modal-overlay" id="tours-modal">
+                <div class="tours__modal">
+                    <button class="tours__modal-close">×</button>
+                    <h2 class="tours__modal-title">Актуальные туры</h2>
+                    <div class="tours__cards">
+                        <div class="tours__card">
+                            <img src="img/watching.jpg" alt="Whale Watching Adventure">
+                            <h3>Очарование танца китов</h3>
+                            <p>Растворитесь в объятиях океана, плывя рядом с величественными горбатыми китами, чьи песни
+                                эхом звучат в глубинах. Это путешествие — идеальный выбор для тех, кто впервые открывает
+                                для себя магию морских исполинов, обещающее восторг и трепет перед чудом природы.</p>
+                        </div>
+                        <div class="tours__card">
+                            <img src="img/deepsea.webp" alt="Deep Sea Whale Encounter">
+                            <h3>Тайны глубин</h3>
+                            <p>Погрузитесь в таинственные бездны океана, где косатки и кашалоты раскрывают свои древние
+                                секреты. Под руководством наших искусных гидов это захватывающее приключение станет
+                                гимном красоте подводного мира, оставляя в сердце неизгладимый след.</p>
+                        </div>
+                        <div class="tours__card">
+                            <img src="img/coastal.webp" alt="Coastal Whale Journey">
+                            <h3>Песнь прибрежных китов</h3>
+                            <p>Отправьтесь в путешествие по мерцающим водам побережья, где серые киты грациозно скользят
+                                в ритме волн. Сопровождаемые нашими опытными наставниками, вы ощутите гармонию с
+                                природой и создадите воспоминания, сияющие, как морская пена под солнцем.</p>
+                        </div>
+                        <div class="tours__card">
+                            <img src="img/ultimate.jpg" alt="Ultimate Whale Expedition">
+                            <h3>Эпическая одиссея китов</h3>
+                            <p>Для искушённых искателей приключений эта грандиозная экспедиция открывает врата в мир
+                                множества китовых видов. Погрузитесь в сердце океана, где каждый момент — это гимн
+                                свободе и величию морских гигантов, обещающий опыт, сравнимый с легендой.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section-plugins">
-
+        <section class="section-plugins" id="gear">
             <img src="img/diver.png" alt="" class="section-plugins__img">
-
             <div class="container">
                 <p class="container__caption">СНАРЯЖЕНИЕ</p>
                 <h2 class="container__slogan">Экипируйтесь для <span class="slogan_colored">незабываемого</span>
                     погружения</h2>
                 <p class="container__text">Мы предлагаем первоклассное снаряжение для дайвинга — от аренды до покупки —
                     с профессиональной поддержкой, чтобы ваше приключение было безопасным и комфортным.</p>
-                <button class="container__button">ОЗНАКОМИТЬСЯ</button>
+                <button class="container__button" id="learn-more-gear">ОЗНАКОМИТЬСЯ</button>
             </div>
-
+            <div class="modal-overlay" id="gear-modal">
+                <div class="cards__modal">
+                    <button class="cards__modal-close">×</button>
+                    <h2 class="cards__modal-title">Мы предлагаем</h2>
+                    <div class="cards__modal-all">
+                        <div class="cards__modal-card">
+                            <img src="img/orca.webp" alt="Whale Watching Adventure" class="cards__modal-image">
+                            <h3 class="cards__modal-heading">Гидрокостюм Orca 3.8 Enduro 2021 (MT)</h3>
+                        </div>
+                        <div class="cards__modal-card">
+                            <img src="img/neptune.jpg" alt="Deep Sea Whale Encounter" class="cards__modal-image">
+                            <h3 class="cards__modal-heading">Маска OCEAN REEF NEPTUNE III BLACK / BLACK (для дайвинга, полнолицевая)</h3>
+                        </div>
+                        <div class="cards__modal-card">
+                            <img src="img/finntrail.webp" alt="Coastal Whale Journey" class="cards__modal-image">
+                            <h3 class="cards__modal-heading">ГЕРМОРЮКЗАК FINNTRAIL EXPEDITION 40L 1730 BLACK</h3>
+                        </div>
+                        <div class="cards__modal-card">
+                            <img src="img/scuba.jpg" alt="Ultimate Whale Expedition" class="cards__modal-image">
+                            <h3 class="cards__modal-heading">Консоль SCUBAPRO 3-х приборная (манометр, глубиномер, компас, термометр)</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="section-studio">
-
+        <section class="section-studio" id="experiencies">
             <div class="container">
                 <p class="container__caption">ОПЫТ</p>
                 <h2 class="container__slogan">Погрузитесь в <span class="slogan_colored">магию океана</span></h2>
                 <p class="container__text">Отправляйтесь в наши уникальные экскурсии, чтобы ощутить связь с китами и
                     морской жизнью в их природной среде. Создайте незабываемые моменты, которые останутся в вашей памяти
                     навсегда.</p>
-                <button class="container__button openModal">ИСПЫТАТЬ ЭТО СЕЙЧАС</button>
+                <button class="container__button openModal" id="learn-more-tours">ИСПЫТАТЬ ЭТО СЕЙЧАС</button>
             </div>
-
             <img src="img/1117876.png" alt="" class="info-studio__img">
         </section>
 
-        <section class="section-reviews">
-
+        <section class="section-reviews" id="reviews">
             <div class="container">
                 <h2 class="container__slogan">Отзывы <span class="slogan_colored">путешественников</span> о нас
                 </h2>
                 <p class="container__text">Прочтите вдохновляющие истории дайверов, которые пережили волшебство плавания
                     с китами в бескрайних просторах океана. Их эмоции и впечатления раскроют, почему это приключение
                     незабываемо!</p>
-                <button class="container__button">ЗАБРОНИРОВАТЬ СЕЙЧАС</button>
+                <button class="container__button openModal">ЗАБРОНИРОВАТЬ СЕЙЧАС</button>
             </div>
-
             <img src="img/reviews_img.png" alt="" class="section-reviews__img">
 
             <div class="section-reviews__cards" id="cards">
@@ -198,7 +250,7 @@
             </div>
         </section>
 
-        <section class="section-advantages">
+        <section class="section-advantages" id="advantages">
             <h2 class="section-advantages__slogan">Ваше путешествие мечты начнется здесь</h2>
             <div class="advantages">
                 <div class="advantages__advantage1">
@@ -208,18 +260,19 @@
                         природы и устойчивые практики.</p>
                 </div>
                 <div class="advantages__advantage2">
-                    <img src="img/unlock.svg" alt="" class="advantages__img">
+                    <img src="img/certificate.png" alt="" class="advantages__img">
                     <p class="advantage__name">Профессиональные гиды</p>
-                    <p class="advantage__text">Погружайтесь под руководством сертифицированных экспертов, обеспечивающих вашу безопасность и комфорт.</p>
+                    <p class="advantage__text">Погружайтесь под руководством сертифицированных экспертов, обеспечивающих
+                        вашу безопасность и комфорт.</p>
                 </div>
                 <div class="advantages__advantage3">
-                    <img src="img/download.svg" alt="" class="advantages__img">
+                    <img src="img/bron.png" alt="" class="advantages__img">
                     <p class="advantage__name">Гибкое бронирование</p>
                     <p class="advantage__text">Переносите или отменяйте бронирование без лишних вопросов — ваше удобство
                         в приоритете!</p>
                 </div>
                 <div class="advantages__advantage4">
-                    <img src="img/play.svg" alt="" class="advantages__img">
+                    <img src="img/group.png" alt="" class="advantages__img">
                     <p class="advantage__name">Камерные группы</p>
                     <p class="advantage__text">Наслаждайтесь эксклюзивными турами в небольших группах для
                         индивидуального и незабываемого опыта.</p>
@@ -227,7 +280,7 @@
             </div>
         </section>
 
-        <section class="section-jobs">
+        <section class="section-jobs" id="jobs">
             <div class="jobs">
                 <h2 class="jobs__slogan">Станьте частью миссии<br>по защите и исследованию океанов</h2>
                 <a href="https://fondwhale.ru/" class="jobs__button">ПРИСОЕДИНИТЬСЯ</a>
@@ -308,9 +361,15 @@
             </ul>
         </div>
     </footer>
+    <button class="back-to-top" title="Back to Top">
+        <img src="img/arrow.png" class="back-to-top__arrow">
+    </button>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/back-to-top.js"></script>
+    <script src="scripts/tours-modal.js"></script>
+    <script src="scripts/gear.js"></script>
 </body>
 
 </html>

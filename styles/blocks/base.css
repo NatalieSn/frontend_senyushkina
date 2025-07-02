@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFF;
+    width: 100%;
+    font-family: Verdana, 'Fontimerr Light', Tahoma, sans-serif;
+}
+

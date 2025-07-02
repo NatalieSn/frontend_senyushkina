@@ -1,3 +1,4 @@
+@import url(blocks/base.css);
 @import url(base/normalize.css);
 @import url(blocks/header.css);
 @import url(blocks/main.css);
@@ -13,21 +14,21 @@
 @import url(blocks/footer.css);
 @import url(blocks/modal.css);
 @import url(blocks/preloader.css);
+@import url(blocks/back-to-top.css);
+@import url(blocks/tours-modal.css);
+@import url(blocks/gear-modal.css);
 
-body {
-    background-color:#FFF;
-    width: 100%;
-    font-family: Verdana, 'Fontimerr Light', Tahoma, sans-serif;
-}
-@font-face {  
-    font-family: 'Fontimerr Light';  
+@font-face {
+    font-family: 'Fontimerr Light';
     src: url('../fonts/ofont.ru_AV\ Fontimer.ttf') format('woff2');
-} 
-@font-face {  
-    font-family: 'Fontimerr Regular';  
+}
+
+@font-face {
+    font-family: 'Fontimerr Regular';
     src: url('../fonts/ofont.ru_AV\ Fontimer\ \(2\).ttf') format('woff2');
-} 
-@font-face {  
-    font-family: 'Fontimerr Bold';  
+}
+
+@font-face {
+    font-family: 'Fontimerr Bold';
     src: url('../fonts/ofont.ru_AV\ Fontimer\ \(1\).ttf') format('woff2');
-} 
+}
