@@ -2,58 +2,82 @@
     display: flex;
     width: auto;
     text-align: center;
-    margin: 150px 8.6%;
+    margin: 100px auto;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
 }
 
 .section-featured__caption {
-    margin-bottom: 30px;
-    font-size: 12pt;
-    color: rgba(28, 139, 192, 0.7);
-    font-weight: 500;
+    font-family: 'Fontimerr Light', Helvetica, sans-serif;
+    margin-bottom: 40px;
+    font-size: 14pt;
+    color: rgb(28, 139, 192);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .section-featured__list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 
 .section-featured__img {
-    padding: 0 2em;
+    padding: 0 1.5em;
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+    max-width: 150px;
 }
 
-/* Планшеты (768px–1024px) */
+.section-featured__marquee {
+    display: flex;
+    justify-content: center;
+}
+
+/* Tablets (768px–1024px) */
 @media only screen and (max-width: 1024px) {
     .section-featured {
-        margin: 40px auto;
+        margin: 60px auto;
+        padding: 15px 0;
     }
     .section-featured__list {
-        width: 70%;
+        width: 80%;
+        gap: 1.5em;
     }
     .section-featured__img {
         padding: 0 1em;
-        width: 80%;
+        width: 15%;
+        max-width: 120px;
     }
     .section-featured__caption {
-        font-size: 10pt;
+        font-size: 12pt;
+        margin-bottom: 30px;
     }
 }
 
-/* Мобильные (<768px) */
+/* Mobile (<768px) */
 @media only screen and (max-width: 768px) {
     .section-featured {
-        margin: 20px 5%;
+        margin: 30px 5%;
+        padding: 10px 0;
     }
     .section-featured__list {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        gap: 1em;
     }
     .section-featured__img {
-        padding: 10px 0;
-        width: 80%;
+        padding: 8px 0;
+        width: 100%;
+        max-width: 100px;
     }
     .section-featured__caption {
-        font-size: 10pt;
+        font-size: 11pt;
+        margin-bottom: 20px;
     }
 }

@@ -1,6 +1,7 @@
 .section-jobs {
     position: relative;
     overflow: visible;
+        margin: 0 auto;
 }
 
 .jobs {
@@ -39,7 +40,6 @@
 .jobs__button {
     padding: 10px 20px;
     width: 184px;
-    height: 37px;
     font-size: 10pt;
     border-radius: 25px;
     border: 1px solid #FFF;
@@ -79,6 +79,6 @@
         /*padding: 20px;
         margin: 20px auto;*/
     }
-    .jobs__slogan { font-size: 24pt; }
-    .jobs__button { width: 140px; font-size: 8pt; padding: 8px 16px; }
+    .jobs__slogan { font-size: 24pt; font-family: 'Fontimerr Bold', Helvetica, sans-serif; }
+    .jobs__button { width: 140px; font-family: 'Fontimerr Light', Helvetica, sans-serif; font-size: 8pt; padding: 8px 16px; }
 }

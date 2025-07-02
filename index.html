@@ -35,23 +35,23 @@
         <div id="myModal" class="modal">
             <div class="modal__content">
                 <span class="modal__close">×</span>
-                <h2 class="modal__header">Забронируйте свое приключение</h2>
-                <form id="myForm">
-                    <label for="name" class="form__label">Имя:</label><br>
-                    <input type="text" id="name" name="name" class="form__input"><br><br>
-                    <label for="email" class="form__label">Эл. почта:</label><br>
-                    <input type="email" id="email" name="email" class="form__input"><br><br>
-                    <label for="tour" class="form__label">Предпоитаемый тур:</label><br>
-                    <select id="tour" name="tour" class="form__input">
-                        <option value="whale-swim">Плавание с китами</option>
-                        <option value="reef-dive">Погружение в коралловый риф</option>
-                        <option value="deep-sea">Исследование глубин</option>
-                    </select><br><br>
-                    <div class="form__buttons">
-                        <button type="submit" id="okButton" class="form__button">Отправить</button>
-                        <button type="button" id="cancelButton" class="form__button">Отмена</button>
-                    </div>
-                </form>
+                <h2 class="modal__header">Забронируйте свое <span class="slogan_colored">приключение</span></h2>
+                    <form id="myForm" class="modal__form">
+                        <label for="name" class="form__label">Имя:</label><br>
+                        <input type="text" id="name" name="name" class="form__input"><br><br>
+                        <label for="email" class="form__label">Эл. почта:</label><br>
+                        <input type="email" id="email" name="email" class="form__input"><br><br>
+                        <label for="tour" class="form__label">Предпочитаемый тур:</label><br>
+                        <select id="tour" name="tour" class="form__input">
+                            <option value="whale-swim">Плавание с китами</option>
+                            <option value="reef-dive">Погружение в коралловый риф</option>
+                            <option value="deep-sea">Исследование глубин</option>
+                        </select><br><br>
+                        <div class="form__buttons">
+                            <button type="submit" id="okButton" class="form__button">Отправить</button>
+                            <button type="button" id="cancelButton" class="form__button">Отмена</button>
+                        </div>
+                    </form>
             </div>
         </div>
     </header>
@@ -66,7 +66,8 @@
 
             <div class="main-block__container">
                 <img src="img/main-block/slogan.png" alt="" class="container__slogan-img">
-                <p class="container__text">Погрузитесь в бездну. Откройте песни китов,<br>океанские волны и глубинное спокойствие.</p>
+                <p class="container__text">Погрузитесь в магию океана! Раскройте тайны песен китов, ощутите ритм волн и
+                    обретите гармонию в глубинах безмолвного спокойствия.</p>
                 <button class="container__button openModal">ЗАРЕГИСТРИРОВАТЬСЯ</button>
             </div>
             <div class="image-container">
@@ -79,11 +80,11 @@
             <p class="section-featured__caption">НАШИ ПАРТНЕРЫ</p>
             <div class="section-featured__marquee">
                 <div class="section-featured__list" id="marquee">
-                    <img src="img/featured1.svg" alt="" class="section-featured__img">
-                    <img src="img/featured2.svg" alt="" class="section-featured__img">
-                    <img src="img/featured3.svg" alt="" class="section-featured__img">
-                    <img src="img/featured4.svg" alt="" class="section-featured__img">
-                    <img src="img/featured5.svg" alt="" class="section-featured__img">
+                    <img src="img/natgeog.png" alt="" class="section-featured__img">
+                    <img src="img/wwf.png" alt="" class="section-featured__img">
+                    <img src="img/humane.svg" alt="" class="section-featured__img">
+                    <img src="img/noroot.png" alt="" class="section-featured__img">
+                    <img src="img/l.svg" alt="" class="section-featured__img">
                 </div>
             </div>
         </section>
@@ -92,9 +93,12 @@
 
             <div class="container">
                 <p class="container__caption">ТУРЫ</p>
-                <h2 class="container__slogan">Найди свое <span class="slogan_colored">приключение</span></h2>
-                <p class="container__text">Погрузитесь в незабываемые экскурсии с плаванием с китами и открытием удивительных морских экосистем. Независимо от уровня подготовки, мы предлагаем уникальные приключения, доступные круглый год.</p>
-                <button class="container__button">ИЗУЧИТЬ ТУРЫ</button>
+                <h2 class="container__slogan">Отправьтесь в <span class="slogan_colored">эпическое</span> приключение</h2>
+                <p class="container__text">Окунитесь в захватывающий мир океана! Плавайте с величественными китами,
+                    исследуйте яркие морские экосистемы и создайте воспоминания, которые останутся с вами навсегда. Наши
+                    туры подходят для всех — от новичков до опытных искателей приключений, и доступны в любое время
+                    года.</p>
+                <button class="container__button">УЗНАТЬ БОЛЬШЕ</button>
             </div>
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -110,13 +114,15 @@
 
         <section class="section-plugins">
 
-            <img src="img/gear.png" alt="" class="section-plugins__img">
+            <img src="img/diver.png" alt="" class="section-plugins__img">
 
             <div class="container">
                 <p class="container__caption">СНАРЯЖЕНИЕ</p>
-                <h2 class="container__slogan">Приготовьтесь к <span class="slogan_colored">приключению</span></h2>
-                <p class="container__text">Получите доступ к высококачественному снаряжению для погружений в океан, доступному для аренды или покупки с профессиональной поддержкой.</p>
-                <button class="container__button">ИЗУЧИТЬ СНАРЯЖЕНИЕ</button>
+                <h2 class="container__slogan">Экипируйтесь для <span class="slogan_colored">незабываемого</span>
+                    погружения</h2>
+                <p class="container__text">Мы предлагаем первоклассное снаряжение для дайвинга — от аренды до покупки —
+                    с профессиональной поддержкой, чтобы ваше приключение было безопасным и комфортным.</p>
+                <button class="container__button">ОЗНАКОМИТЬСЯ</button>
             </div>
 
         </section>
@@ -125,9 +131,11 @@
 
             <div class="container">
                 <p class="container__caption">ОПЫТ</p>
-                <h2 class="container__slogan">Погрузитесь в <span class="slogan_colored">гармонию</span></h2>
-                <p class="container__text">Присоединяйтесь к нашим экскурсиям, чтобы соединиться с китами и морской жизнью в их естественной среде, создавая воспоминания на всю жизнь.</p>
-                <button class="container__button openModal">ПОЛУЧИТЕ ОПЫТ</button>
+                <h2 class="container__slogan">Погрузитесь в <span class="slogan_colored">магию океана</span></h2>
+                <p class="container__text">Отправляйтесь в наши уникальные экскурсии, чтобы ощутить связь с китами и
+                    морской жизнью в их природной среде. Создайте незабываемые моменты, которые останутся в вашей памяти
+                    навсегда.</p>
+                <button class="container__button openModal">ИСПЫТАТЬ ЭТО СЕЙЧАС</button>
             </div>
 
             <img src="img/1117876.png" alt="" class="info-studio__img">
@@ -136,9 +144,11 @@
         <section class="section-reviews">
 
             <div class="container">
-                <h2 class="container__slogan">Что говорят <span class="slogan_colored">путешественники</span> о нас
+                <h2 class="container__slogan">Отзывы <span class="slogan_colored">путешественников</span> о нас
                 </h2>
-                <p class="container__text">Узнайте от дайверов, которые испытали магию плавания с китами в открытом океане.</p>
+                <p class="container__text">Прочтите вдохновляющие истории дайверов, которые пережили волшебство плавания
+                    с китами в бескрайних просторах океана. Их эмоции и впечатления раскроют, почему это приключение
+                    незабываемо!</p>
                 <button class="container__button">ЗАБРОНИРОВАТЬ СЕЙЧАС</button>
             </div>
 
@@ -189,35 +199,38 @@
         </section>
 
         <section class="section-advantages">
-            <h2 class="section-advantages__slogan">As thrilling as it sounds</h2>
+            <h2 class="section-advantages__slogan">Ваше путешествие мечты начнется здесь</h2>
             <div class="advantages">
                 <div class="advantages__advantage1">
-                    <img src="img/volume.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">Eco-Friendly Tours</p>
-                    <p class="advantage__text">Our tours prioritize marine conservation and sustainable practices.</p>
+                    <img src="img/eco.png" alt="" class="advantages__img">
+                    <p class="advantage__name">Экологичные туры</p>
+                    <p class="advantage__text">Наши туры созданы с заботой об океане, поддерживая сохранение морской
+                        природы и устойчивые практики.</p>
                 </div>
                 <div class="advantages__advantage2">
                     <img src="img/unlock.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">Expert Guides</p>
-                    <p class="advantage__text">Dive with certified professionals ensuring your safety and comfort.</p>
+                    <p class="advantage__name">Профессиональные гиды</p>
+                    <p class="advantage__text">Погружайтесь под руководством сертифицированных экспертов, обеспечивающих вашу безопасность и комфорт.</p>
                 </div>
                 <div class="advantages__advantage3">
                     <img src="img/download.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">Flexible Booking</p>
-                    <p class="advantage__text">Change or cancel your tour with ease,<br>no questions asked.</p>
+                    <p class="advantage__name">Гибкое бронирование</p>
+                    <p class="advantage__text">Переносите или отменяйте бронирование без лишних вопросов — ваше удобство
+                        в приоритете!</p>
                 </div>
                 <div class="advantages__advantage4">
                     <img src="img/play.svg" alt="" class="advantages__img">
-                    <p class="advantage__name">Small Groups</p>
-                    <p class="advantage__text">Enjoy intimate tours for a personalized diving experience.</p>
+                    <p class="advantage__name">Камерные группы</p>
+                    <p class="advantage__text">Наслаждайтесь эксклюзивными турами в небольших группах для
+                        индивидуального и незабываемого опыта.</p>
                 </div>
             </div>
         </section>
 
         <section class="section-jobs">
             <div class="jobs">
-                <h2 class="jobs__slogan">Join us to protect<br>and explore the oceans</h2>
-                <button class="jobs__button">JOBS WITH US</button>
+                <h2 class="jobs__slogan">Станьте частью миссии<br>по защите и исследованию океанов</h2>
+                <a href="https://fondwhale.ru/" class="jobs__button">ПРИСОЕДИНИТЬСЯ</a>
             </div>
         </section>
 
@@ -226,58 +239,58 @@
     <footer class="footer">
         <div class="copyright">
             <img src="img/header/logo.png" alt="" class="copyright__logo">
-            <p class="copyright__text">2025 BlueEcho.com All Rights Reserved</p>
+            <p class="copyright__text">2025 BlueEcho.com Все права защищены</p>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">TOURS</h2>
-                <li class="column__link">Whale Swimming</li>
-                <li class="column__link">Reef Diving</li>
-                <li class="column__link">Group Packages</li>
+                <h2 class="column__h">ТУРЫ</h2>
+                <li class="column__link">Плавание с китами</li>
+                <li class="column__link">Погружение к рифам</li>
+                <li class="column__link">Групповые туры</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">CONSERVATION</h2>
-                <li class="column__link">Our Mission</li>
-                <li class="column__link">Partner Organizations</li>
-                <li class="column__link">Eco Practices</li>
+                <h2 class="column__h">СОХРАНЕНИЕ ПРИРОДЫ</h2>
+                <li class="column__link">Наша миссия</li>
+                <li class="column__link">Партнерские организации</li>
+                <li class="column__link">Экологические практики</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">STORIES</h2>
-                <li class="column__link">Diver Experiences</li>
-                <li class="column__link">Marine Life Facts</li>
-                <li class="column__link">Travel Tips</li>
+                <h2 class="column__h">ИСТОРИИ</h2>
+                <li class="column__link">Рассказы дайверов</li>
+                <li class="column__link">Факты о морской жизни</li>
+                <li class="column__link">Советы путешественникам</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">TOURS</h2>
-                <li class="column__link">Whale Swimming</li>
-                <li class="column__link">Reef Diving</li>
-                <li class="column__link">Group Packages</li>
+                <h2 class="column__h">ТУРЫ</h2>
+                <li class="column__link">Плавание с китами</li>
+                <li class="column__link">Погружение к рифам</li>
+                <li class="column__link">Групповые туры</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">CONSERVATION</h2>
-                <li class="column__link">Our Mission</li>
-                <li class="column__link">Partner Organizations</li>
-                <li class="column__link">Eco Practices</li>
+                <h2 class="column__h">СОХРАНЕНИЕ ПРИРОДЫ</h2>
+                <li class="column__link">Наша миссия</li>
+                <li class="column__link">Партнерские организации</li>
+                <li class="column__link">Экологические практики</li>
             </ul>
         </div>
         <div class="links">
             <ul class="links__column">
-                <h2 class="column__h">STORIES</h2>
-                <li class="column__link">Diver Experiences</li>
-                <li class="column__link">Marine Life Facts</li>
-                <li class="column__link">Travel Tips</li>
+                <h2 class="column__h">ИСТОРИИ</h2>
+                <li class="column__link">Рассказы дайверов</li>
+                <li class="column__link">Факты о морской жизни</li>
+                <li class="column__link">Советы путешественникам</li>
             </ul>
         </div>
         <div class="socials">
-            <h2 class="column__h">FIND US ON SOCIAL</h2>
+            <h2 class="column__h">ПРИСОЕДИНЯЙТЕСЬ К НАМ В СОЦСЕТЯХ</h2>
             <div class="socials_imgs">
                 <img src="img/facebook.svg" alt="" class="socials__item">
                 <img src="img/twitter.svg" alt="" class="socials__item">
@@ -285,13 +298,13 @@
                 <img src="img/YouTube.svg" alt="" class="socials__item">
             </div>
             <ul class="socials__links">
-                <li class="socials__link">Terms Of Use</li>
-                <li class="socials__link">Privacy Policy</li>
-                <li class="socials__link">Jobs</li>
+                <li class="socials__link">Условия использования</li>
+                <li class="socials__link">Политика конфиденциальности</li>
+                <li class="socials__link">Вакансии</li>
             </ul>
             <ul class="socials__links">
-                <li class="socials__link">Contact</li>
-                <li class="socials__link">Help</li>
+                <li class="socials__link">Контакты</li>
+                <li class="socials__link">Помощь</li>
             </ul>
         </div>
     </footer>

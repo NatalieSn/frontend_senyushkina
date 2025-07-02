@@ -1,6 +1,6 @@
 .section-advantages {
     background-color: rgba(106, 144, 180, 1);
-    margin: 0;
+    margin: 0 auto;
     max-width: 100vw;
     width: 100%;
     color: #FFF;
@@ -18,6 +18,7 @@
 }
 
 .section-advantages__slogan {
+    font-family: 'Fontimerr Bold', Helvetica, sans-serif;
     text-align: center;
     font-size: 38pt;
     margin: 50px 0 0 0;
@@ -38,16 +39,19 @@
     font-size: 18pt;
     font-weight: bold;
     margin: 0 0 19px 0;
+    font-family: 'Fontimerr Bold', Helvetica, sans-serif;
 }
 
 .advantage__text {
     font-size: 12pt;
-    color: #000;
+    color: #fff;
     line-height: 171%;
+    font-family: 'Fontimerr Regular', Helvetica, sans-serif;
 }
 
 .advantages__img {
     padding-bottom: 15px;
+    width: 50px;
 }
 
 /* Планшеты (768px–1024px) */

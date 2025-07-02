@@ -17,5 +17,17 @@
 body {
     background-color:#FFF;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, 'Fontimerr Light', Tahoma, sans-serif;
 }
+@font-face {  
+    font-family: 'Fontimerr Light';  
+    src: url('../fonts/ofont.ru_AV\ Fontimer.ttf') format('woff2');
+} 
+@font-face {  
+    font-family: 'Fontimerr Regular';  
+    src: url('../fonts/ofont.ru_AV\ Fontimer\ \(2\).ttf') format('woff2');
+} 
+@font-face {  
+    font-family: 'Fontimerr Bold';  
+    src: url('../fonts/ofont.ru_AV\ Fontimer\ \(1\).ttf') format('woff2');
+} 

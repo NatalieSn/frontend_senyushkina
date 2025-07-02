@@ -7,9 +7,10 @@
     width: 100%;
     height: 120vh;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
-.section-reviews > .container {
+.section-reviews>.container {
     height: 350px;
 }
 
@@ -27,7 +28,10 @@
     color: #FFF;
 }
 
-.cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
+.cards__review-1,
+.cards__review-2,
+.cards__review-3,
+.cards__review-4 {
     width: 290px;
     height: auto;
     background-color: rgb(106, 144, 180);
@@ -95,18 +99,37 @@
         padding: 150px 5% 0 3%;
         height: 100vh;
     }
+
     .section-reviews__img {
         width: 60%;
         top: -150px;
     }
-    .cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
+
+    .cards__review-1,
+    .cards__review-2,
+    .cards__review-3,
+    .cards__review-4 {
         width: 250px;
         padding: 20px;
     }
-    .cards__review-1 { right: 400px; }
-    .cards__review-2 { right: 50px; }
-    .cards__review-3 { top: 400px; right: 350px; }
-    .cards__review-4 { top: 400px; right: 0; }
+
+    .cards__review-1 {
+        right: 400px;
+    }
+
+    .cards__review-2 {
+        right: 50px;
+    }
+
+    .cards__review-3 {
+        top: 400px;
+        right: 350px;
+    }
+
+    .cards__review-4 {
+        top: 400px;
+        right: 0;
+    }
 }
 
 /* Мобильные (<768px) */
@@ -116,20 +139,34 @@
         height: auto;
         min-height: 80vh;
     }
+
     .section-reviews__img {
         position: relative;
         width: 100%;
         top: 0;
         margin-bottom: 20px;
     }
-    .cards__review-1, .cards__review-2, .cards__review-3, .cards__review-4 {
+
+    .cards__review-1,
+    .cards__review-2,
+    .cards__review-3,
+    .cards__review-4 {
         position: relative;
         width: 90%;
         margin: 20px auto;
         top: auto;
         right: auto;
     }
-    .review__text { font-size: 12pt; }
-    .author__name { font-size: 10pt; }
-    .author__artist { font-size: 7pt; }
+
+    .review__text {
+        font-size: 12pt;
+    }
+
+    .author__name {
+        font-size: 10pt;
+    }
+
+    .author__artist {
+        font-size: 7pt;
+    }
 }

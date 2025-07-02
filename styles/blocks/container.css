@@ -3,18 +3,20 @@
 }
 
 .container__caption {
+    font-family: 'Fontimerr Light', Helvetica, sans-serif;
     font-size: 14pt;
-    color: rgba(28, 139, 192, 0.7);
+    color: rgb(28, 139, 192);
 }
 
 .container__slogan {
+    font-family: 'Fontimerr Bold', Helvetica, sans-serif;
     font-size: 32pt;
     margin: 3px 0 18px 0;
 }
 
 .container__text {
     line-height: 171%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Fontimerr Regular', Helvetica, sans-serif;
     font-size: 16pt;
     color: #1c8bc0;
 }
@@ -24,6 +26,7 @@
 }
 
 .container__button {
+    font-family: 'Fontimerr Light', Helvetica, sans-serif;
     padding: 10px 20px;
     font-size: 10pt;
     border-radius: 25px;
@@ -43,18 +46,18 @@
 /* Планшеты (768px–1024px) */
 @media only screen and (max-width: 1024px) {
     .container {
-        width: 50%; /* Увеличиваем ширину для планшетов */
+        width: 50%; 
     }
     .container__slogan {
-        font-size: 24pt; /* Уменьшаем шрифт слогана */
-        text-align: center;
+        font-size: 24pt;
+       /* text-align: center;*/
     }
     .container__text {
-        font-size: 14pt; /* Уменьшаем шрифт текста */
-        text-align: center;
+        font-size: 14pt; 
+        /*text-align: center;*/
     }
     .container__button {
-        padding: 8px 16px; /* Уменьшаем отступы кнопки */
+        padding: 8px 16px; 
         font-size: 9pt;
     }
 }
@@ -62,25 +65,25 @@
 /* Мобильные (<768px) */
 @media only screen and (max-width: 768px) {
     .container {
-        width: 90%; /* Почти полная ширина для мобильных */
-        margin: 0 auto; /* Центрируем */
+        width: 90%;
+        margin: 0 auto;
     }
     .container__caption {
-        font-size: 12pt; /* Уменьшаем шрифт подписи */
-        text-align: center;
+        font-size: 12pt; 
+       /* text-align: center;*/
     }
     .container__slogan {
-        font-size: 20pt; /* Уменьшаем шрифт слогана */
-        text-align: center;
+        font-size: 20pt; 
+        /*text-align: center;*/
     }
     .container__text {
-        font-size: 12pt; /* Уменьшаем шрифт текста */
-        line-height: 150%; /* Уменьшаем межстрочный интервал */
-        text-align: center;
+        font-size: 12pt; 
+        line-height: 150%;
+        /*text-align: center;*/
     }
     .container__button {
-        width: 100%; /* Кнопка на всю ширину */
-        padding: 12px; /* Увеличиваем отступы для удобства нажатия */
+        width: 100%;
+        padding: 12px; 
         font-size: 10pt;
     }
 }
