@@ -24,29 +24,20 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.cards__modal-title{
+.cards__modal-title {
     text-align: center;
 }
 
 .cards__modal-close {
     position: absolute;
     top: 10px;
-    right: 10px;
-    background: rgb(28, 139, 192);
-    color: white;
+    right: 15px;
+    font-size: 24px;
+    background: transparent;
     border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
+    color: #000;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cards__modal-close:hover {
-    background: #cc0000;
+    z-index: 1001;
 }
 
 .cards__modal-all {
@@ -87,7 +78,7 @@
     color: #555;
 }
 
-.tours__modal-title{
+.tours__modal-title {
     font-family: 'Fontimerr Regular', Helvetica, sans-serif;
 }
 
