@@ -31,28 +31,29 @@
             <button class="header__button-sign openModal">ЗАРЕГИСТРИРОВАТЬСЯ</button>
         </div>
 
-        <!--Модальное окно с формой-->
-        <div id="myModal" class="modal">
-            <div class="modal__content">
-                <span class="modal__close">×</span>
-                <h2 class="modal__header">Забронируйте свое <span class="slogan_colored">приключение</span></h2>
-                <form id="myForm" class="modal__form">
-                    <label for="name" class="form__label">Имя:</label><br>
-                    <input type="text" id="name" name="name" class="form__input"><br><br>
-                    <label for="email" class="form__label">Эл. почта:</label><br>
-                    <input type="email" id="email" name="email" class="form__input"><br><br>
-                    <label for="tour" class="form__label">Предпочитаемый тур:</label><br>
-                    <select id="tour" name="tour" class="form__input">
-                        <option value="whale-swim">Плавание с китами</option>
-                        <option value="reef-dive">Погружение в коралловый риф</option>
-                        <option value="deep-sea">Исследование глубин</option>
-                    </select><br><br>
-                    <div class="form__buttons">
-                        <button type="submit" id="okButton" class="form__button">Отправить</button>
-                        <button type="button" id="cancelButton" class="form__button">Отмена</button>
-                    </div>
-                </form>
-            </div>
+        <div class="wrapper" id="myModal">
+            <form action="#" class="wrapper__form">
+                <h2 class="wrapper__heading">Вход</h2>
+                <div class="wrapper__input-field">
+                    <input type="text" required class="wrapper__input">
+                    <label class="wrapper__input-label">Введите эл. почту...</label>
+                </div>
+                <div class="wrapper__input-field">
+                    <input type="password" required class="wrapper__input">
+                    <label class="wrapper__input-label">Введите пароль...</label>
+                </div>
+                <div class="wrapper__forget">
+                    <label for="remember" class="wrapper__forget-label">
+                        <input type="checkbox" id="remember" class="wrapper__forget-input">
+                        <p class="wrapper__forget-text">Запомнить меня</p>
+                    </label>
+                    <a href="#" class="wrapper__link">Забыли пароль?</a>
+                </div>
+                <button type="submit" class="wrapper__button">Войти</button>
+                <div class="wrapper__register">
+                    <p>Еще нет аккаунта? <a href="#">Зарегистрироваться</a></p>
+                </div>
+            </form>
         </div>
     </header>
 
@@ -168,7 +169,8 @@
                         </div>
                         <div class="cards__modal-card">
                             <img src="img/neptune.jpg" alt="Deep Sea Whale Encounter" class="cards__modal-image">
-                            <h3 class="cards__modal-heading">Маска OCEAN REEF NEPTUNE III BLACK / BLACK (для дайвинга, полнолицевая)</h3>
+                            <h3 class="cards__modal-heading">Маска OCEAN REEF NEPTUNE III BLACK / BLACK (для дайвинга,
+                                полнолицевая)</h3>
                         </div>
                         <div class="cards__modal-card">
                             <img src="img/finntrail.webp" alt="Coastal Whale Journey" class="cards__modal-image">
@@ -176,7 +178,8 @@
                         </div>
                         <div class="cards__modal-card">
                             <img src="img/scuba.jpg" alt="Ultimate Whale Expedition" class="cards__modal-image">
-                            <h3 class="cards__modal-heading">Консоль SCUBAPRO 3-х приборная (манометр, глубиномер, компас, термометр)</h3>
+                            <h3 class="cards__modal-heading">Консоль SCUBAPRO 3-х приборная (манометр, глубиномер,
+                                компас, термометр)</h3>
                         </div>
                     </div>
                 </div>
@@ -364,12 +367,14 @@
     <button class="back-to-top" title="Back to Top">
         <img src="img/arrow.png" class="back-to-top__arrow">
     </button>
+    <div class="modal-bg" id="modalBg"></div>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/back-to-top.js"></script>
     <script src="scripts/tours-modal.js"></script>
     <script src="scripts/gear.js"></script>
+    
 </body>
 
 </html>

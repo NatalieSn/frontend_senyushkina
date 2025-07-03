@@ -18,7 +18,7 @@
     width: 55%;
     height: auto;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     top: -184px;
     right: 0;
     object-fit: contain;
@@ -37,7 +37,7 @@
     background-color: rgb(106, 144, 180);
     padding: 25px;
     color: #FFF;
-    z-index: 2;
+    z-index: 0;
 }
 
 .review__text {

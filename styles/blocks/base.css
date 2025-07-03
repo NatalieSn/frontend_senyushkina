@@ -8,3 +8,12 @@ body {
     font-family: Verdana, 'Fontimerr Light', Tahoma, sans-serif;
 }
 
+/*body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/Kit-65.jpg"), #000;
+  background-position: center;
+  background-size: cover;
+}*/

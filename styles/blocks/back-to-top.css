@@ -14,7 +14,7 @@
     cursor: pointer;
     opacity: 0.8;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    z-index: 1000;
+    z-index: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow, stronger at the bottom */
 }
 

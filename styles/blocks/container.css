@@ -38,7 +38,7 @@
 }
 
 .container__button:hover {
-    background-color: rgb(2, 66, 192);
+    background-color: rgba(38, 101, 140, 0.9);
     transition: 0.2s;
     cursor: pointer;
 }

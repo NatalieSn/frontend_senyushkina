@@ -8,7 +8,46 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("myModal");
+  const modalBg = document.getElementById("modalBg");
+  const openBtn = document.querySelectorAll(".openModal");
+  const content = document.getElementById("content");
+  const closeBtn = document.createElement("button");
 
+  // Настройка кнопки закрытия
+  closeBtn.textContent = "×";
+  closeBtn.classList.add("modal-close-btn");
+  modal.appendChild(closeBtn);
+
+  // Функция открытия
+  function openModal() {
+    modal.style.display = "block";
+    modalBg.style.display = "block";
+    //content.style.display = "none";
+    document.body.classList.add("modal-open");
+  }
+
+  // Функция закрытия
+  function closeModal() {
+    modal.style.display = "none";
+    modalBg.style.display = "none";
+    //content.style.display = "";
+    document.body.classList.remove("modal-open");
+  }
+
+  openBtn.forEach(btn => {
+    btn.addEventListener("click", openModal);
+  });
+
+  /*openBtn.addEventListener("click", openModal);*/
+  closeBtn.addEventListener("click", closeModal);
+  modalBg.addEventListener("click", closeModal);
+});
+
+
+
+/*
 const modal = document.getElementById("myModal");
 const btns = document.querySelectorAll(".openModal"); // Select all buttons with class "openModal"
 const span = document.getElementsByClassName("modal__close")[0];
@@ -43,10 +82,10 @@ window.onclick = function(event) {
 function closeModal() {
     modal.style.display = "none";
     document.body.style.overflow = "auto"; // Включаем скролл
-}
+}*/
 
-  //Прелоадер
-  window.onload = function() {
+//Прелоадер
+window.onload = function () {
     const preloader = document.getElementById('preloader');
     setTimeout(() => {
         preloader.style.display = 'none'; // Скрыть прелоадер
